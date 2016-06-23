@@ -41,8 +41,28 @@
 	line-height: $lineHeight-normal;	
 }
 
-.ParagraphSmall {
+.Fox {
+	font-size: rem-calc(18);
+	font-weight: 400;
+	font-style: italic;
+	line-height: $lineHeight-tight;	
+}
+
+.Woody {
+	font-size: rem-calc(13);
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: $lineHeight-tight;	
+}
+
+.Dog {
+	font-size: rem-calc(16);
+	font-weight: 600;
+	line-height: $lineHeight-tight;	
+}
+
+.Squirrel {
 	font-size: rem-calc(14);
 	font-weight: 400;
-	line-height: $lineHeight-normal;	
+	line-height: $lineHeight-tight;	
 }
