@@ -1,20 +1,48 @@
 .H0 {
-	@include breakpoint(medium up) {
-		font-size: rem-calc(26);
-	}
-	@include breakpoint(large up) {
-		font-size: rem-calc(35);
-	}
-	line-height: 1.2;
-	font-weight: bold;
+	font-size: rem-calc(76);
+	font-weight: 600;
+	line-height: $lineHeight-single;
 }
 
 .H1 {
+	font-size: rem-calc(36);
+	font-weight: 600;
+	line-height: $lineHeight-tight;	
+}
+
+.H2 {
+	font-size: rem-calc(30);
+	font-weight: 600;
+	line-height: $lineHeight-tight;	
+}
+
+.H1Alt {
+	font-size: rem-calc(36);
+	font-weight: 400;
+	font-style: italic;
+	line-height: $lineHeight-tight;	
+}
+
+.Lead {
+	font-size: rem-calc(34);
+	font-weight: 300;
+	line-height: $lineHeight-normal;	
+}
+
+.ParagraphLarge {
+	font-size: rem-calc(18);
+	font-weight: 400;
+	line-height: $lineHeight-normal;	
 }
 
 .Paragraph {
-	font-size: rem-calc(18);
+	font-size: rem-calc(16);
+	font-weight: 400;
+	line-height: $lineHeight-normal;	
 }
 
-.ParagraphAlt {
+.ParagraphSmall {
+	font-size: rem-calc(14);
+	font-weight: 400;
+	line-height: $lineHeight-normal;	
 }
