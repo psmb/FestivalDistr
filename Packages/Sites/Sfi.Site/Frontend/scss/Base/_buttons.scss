@@ -1,11 +1,19 @@
 .Button {
-	display: inline-block;
+	display: block;
 	transition: $transition;
 	background-color: $color-primary;
-	padding: $u;
+	padding: $u/2 $u;
 	color: white;
 
 	&:hover {
 		background-color: darken($color-primary, 10%);
+	}
+}
+
+.Button--alt {
+	background-color: $color-primaryAlt;
+
+	&:hover {
+		background-color: darken($color-primaryAlt, 10%);
 	}
 }

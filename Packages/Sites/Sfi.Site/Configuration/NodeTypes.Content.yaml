@@ -1,0 +1,45 @@
+'Sfi.Site:VenuesMenu':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: 'Меню площадок'
+
+'Sfi.Site:NavSection':
+  abstract: true
+  superTypes:
+    - 'TYPO3.Neos:Content'
+    - 'TYPO3.Neos:ContentCollection'
+  ui:
+    inspector:
+      groups:
+        nav:
+          label: 'Навигационная секция'
+  constraints:
+    nodeTypes:
+      '*': true
+  properties:
+    navTitle:
+      type: string
+      ul:
+        label: 'Название для навигации (на английском)'
+        reloadPageIfChanged: true
+        inspector:
+          group: 'nav'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          minimum: 1
+          maximum: 255
+        regularExpression:
+          regularExpression: '/^[a-z0-9\-]+$/i'
+    title:
+      type: string
+      ui:
+        label: 'Название для меню'
+        inspector:
+          group: 'nav'
+
+'Sfi.Site:PaperCard':
+  superTypes:
+    - 'Sfi.Site:NavSection'
+  ui:
+    label: 'Секция-листик'

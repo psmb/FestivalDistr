@@ -1,0 +1,30 @@
+.Gallery {
+	display: none;
+	padding: 4px 2px;
+	@include breakpoint(medium up) {
+		display: flex;
+	}
+}
+
+.Gallery-item {
+	padding: 0 2px !important;
+	@include breakpoint(medium only) {
+		width: 25%;
+		display: none;
+
+		&:nth-child(n+3):nth-child(-n+6) {
+			display: block;
+		}
+	}
+	@include breakpoint(large only) {
+		width: 16.666%;
+		display: none;
+
+		&:nth-child(n+2):nth-child(-n+7) {
+			display: block;
+		}
+	}
+	@include breakpoint(xlarge up) {
+		width: 12.5%;
+	}
+}

@@ -1,0 +1,13 @@
+prototype(S:VenuesMenu)>
+prototype(S:VenuesMenu) < prototype(T:Collection) {
+	@process.tmpl = ${'<ul class="VenuesMenu">' + value + '</ul>'}
+	collection = ${q(site).children('[instanceof TYPO3.Neos:Document]').get()}
+	itemRenderer = T:Tag {
+		@process.tmpl = ${'<li class="VenusMenu-item Link marginBottom-single">' + value + '</li>'}
+		tagName = 'a'
+		attributes.href = NodeUri {
+			node = ${node}
+		}
+		content = ${node.properties.title}
+	}
+}

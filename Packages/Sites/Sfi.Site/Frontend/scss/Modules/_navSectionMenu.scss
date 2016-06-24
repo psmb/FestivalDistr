@@ -1,0 +1,16 @@
+.NavSectionMenu {
+	padding: $u/2 0;
+	@include breakpoint(medium up) {
+		margin-left: -$u/2;
+		margin-right: -$u/2;
+		padding: $u 0;
+		display: flex;
+	}
+}
+
+.NavSectionMenu-item {
+	margin: $u/2 0;
+	@include breakpoint(medium up) {
+		margin: 0 $u/2;
+	}
+}

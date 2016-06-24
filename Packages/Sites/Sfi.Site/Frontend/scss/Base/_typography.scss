@@ -1,68 +1,83 @@
 .H0 {
-	font-size: rem-calc(76);
+	font-size: rem-calc(36);
+	@include breakpoint(medium up) {
+		font-size: rem-calc(72);
+	}
 	font-weight: 600;
 	line-height: $lineHeight-single;
 }
 
 .H1 {
-	font-size: rem-calc(36);
+	font-size: rem-calc(28);
+	@include breakpoint(medium up) {
+		font-size: rem-calc(36);
+	}
 	font-weight: 600;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }
 
 .H2 {
-	font-size: rem-calc(30);
+	font-size: rem-calc(22);
+	@include breakpoint(medium up) {
+		font-size: rem-calc(30);
+	}
 	font-weight: 600;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }
 
 .H1Alt {
-	font-size: rem-calc(36);
+	font-size: rem-calc(24);
+	@include breakpoint(medium up) {
+		font-size: rem-calc(36);
+	}
 	font-weight: 400;
 	font-style: italic;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }
 
 .Lead {
-	font-size: rem-calc(34);
+	font-size: rem-calc(26);
+	@include breakpoint(medium up) {
+		font-size: rem-calc(34);
+	}
 	font-weight: 300;
-	line-height: $lineHeight-normal;	
+	line-height: $lineHeight-normal;
 }
 
 .ParagraphLarge {
 	font-size: rem-calc(18);
 	font-weight: 400;
-	line-height: $lineHeight-normal;	
+	line-height: $lineHeight-normal;
 }
 
 .Paragraph {
 	font-size: rem-calc(16);
 	font-weight: 400;
-	line-height: $lineHeight-normal;	
+	line-height: $lineHeight-normal;
 }
 
 .Fox {
 	font-size: rem-calc(18);
 	font-weight: 400;
 	font-style: italic;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }
 
 .Woody {
 	font-size: rem-calc(13);
 	font-weight: 400;
 	text-transform: uppercase;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }
 
 .Dog {
 	font-size: rem-calc(16);
 	font-weight: 600;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }
 
 .Squirrel {
 	font-size: rem-calc(14);
 	font-weight: 400;
-	line-height: $lineHeight-tight;	
+	line-height: $lineHeight-tight;
 }

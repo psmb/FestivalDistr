@@ -1,4 +1,14 @@
-prototype(Sfi.Site:Header) < prototype(T:Template) {
+prototype(S:Header) < prototype(T:Template) {
 	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Header.html'
-	mainMenu = Sfi.Site:MainMenu
+	mainMenu = S:NavSectionMenu
+
+	headline = ${q(site).property('headline')}
+	subHeadline = ${q(site).property('subHeadline')}
+	location = ${q(site).property('location')}
+	summary = ${q(site).property('summary')}
+	coverImageUri = ImageUri {
+		asset = ${q(site).property('coverImage')}
+	}
+
+	isMain = ${site == documentNode ? true : false}
 }

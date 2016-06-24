@@ -1,0 +1,7 @@
+prototype(S:MainPage)>
+prototype(S:MainPage) < prototype(T:Array) {
+	gallery = S:Gallery
+	main = TYPO3.Neos:ContentCollection {
+		nodePath = 'main'
+	}
+}

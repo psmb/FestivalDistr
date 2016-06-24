@@ -1,0 +1,14 @@
+.Masthead {
+	background-position: center;
+	background-size: cover;
+}
+
+.Masthead-overlay {
+	background-color: transparentize($color-primaryAlt, .3);
+}
+
+.Masthead-summary {
+	p {
+		margin-bottom: $u;
+	}
+}

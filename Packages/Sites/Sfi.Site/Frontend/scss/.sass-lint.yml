@@ -11,7 +11,4 @@ rules:
   no-important: 0
   space-around-operator: 0
   clean-import-paths: 0
-  property-sort-order:
-    - 1
-    -
-      order: 'concentric'
+  property-sort-order: 0

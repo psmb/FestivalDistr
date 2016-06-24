@@ -2,7 +2,7 @@ $grid-column-gutter: (
 	small: 12px,
 	medium: 24px,
 );
-
+$global-width: 100% !default;
 @import '../node_modules/foundation-sites/scss/foundation';
 @import 'reset';
 @import 'Base/**/*.scss';

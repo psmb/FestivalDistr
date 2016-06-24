@@ -1,0 +1,10 @@
+prototype(S:PaperCard) < prototype(T:Tag) {
+	attributes.class = 'PaperCard'
+	attributes.id = ${node.properties.navTitle}
+	content = T:Array {
+		title = ${'<h2 class="PaperCard-title H1">' + node.properties.title + '</h2>'}
+		children = ContentCollectionRenderer {
+			@process.contentElementWrapping = ContentElementWrapping
+		}
+	}
+}

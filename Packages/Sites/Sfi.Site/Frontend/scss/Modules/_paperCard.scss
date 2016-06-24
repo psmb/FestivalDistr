@@ -1,0 +1,11 @@
+.PaperCard {
+	background-color: white;
+	padding: 3*$u;
+	margin: 3*$u 0;
+}
+
+.PaperCard-title {
+	border-bottom: 1px solid black;
+	padding-bottom: 3px;
+	margin-bottom: 2*$u;
+}

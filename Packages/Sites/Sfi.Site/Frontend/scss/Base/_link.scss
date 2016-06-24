@@ -1,0 +1,8 @@
+.Link {
+	@extend .Dog;
+	color: $color-primary;
+
+	&:hover {
+		color: darken($color-primary, 10%);
+	}
+}

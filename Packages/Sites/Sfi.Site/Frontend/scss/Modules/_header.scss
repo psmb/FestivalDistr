@@ -1,0 +1,6 @@
+.Header {
+	@include breakpoint(large up) {
+		display: flex;
+		justify-content: space-between;
+	}
+}

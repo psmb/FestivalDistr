@@ -1,0 +1,83 @@
+# Define Aloha presets to reuse throughout the document
+blah: &alohaPlain
+  placeholder: 'Enter title here'
+  format:
+    b: false
+    i: false
+    u: false
+    sub: false
+    sup: false
+    p: false
+    h1: false
+    h2: false
+    h3: false
+    pre: false
+    removeFormat: false
+  table: {  }
+  list: {  }
+  link:
+    a: false
+  alignment: {  }
+  formatlesspaste:
+    'button': FALSE
+    'formatlessPasteOption': TRUE
+    'autoparagraph': TRUE
+
+
+'Sfi.Site:MainPage':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+    gallery:
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Главная страница'
+  properties:
+    headline:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          <<: *alohaPlain
+          placeholder: 'Заголовок сайта'
+    subHeadline:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          <<: *alohaPlain
+          placeholder: 'Подзаголовок сайта'
+    location:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          <<: *alohaPlain
+          placeholder: 'Место и дата'
+    summary:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Сводка по вестивалю по дням'
+    coverImage:
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Фото обложки'
+        reloadIfChanged: FALSE
+        inspector:
+          group: document
+          editorOptions:
+            features:
+              resize: TRUE
+
+'Sfi.Site:VenuePage':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Страница площадки'

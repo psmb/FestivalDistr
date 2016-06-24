@@ -1,0 +1,18 @@
+prototype(S:Gallery) < prototype(T:Collection) {
+	@process.tmpl = ${'<ul class="Gallery">' + value + '</ul>'}
+	collection = ${q(site).children('gallery').children('[instanceof Psmb.NodeTypes:Image]').get()}
+	itemRenderer = Psmb.NodeTypes:Image {
+		@process.tmpl = ${'<li class="Gallery-item">' + value + '</li>'}
+		content.image {
+			maximumWidth = 240
+			maximumHeight = 120
+			allowCropping = TRUE
+		}
+	}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'DescendantOf_' + q(site).children('gallery').get(0).identifier}
+		}
+	}
+}

@@ -1,7 +1,25 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
-<header class="Header">
-	<neos:link.node node="~" title="{f:translate(package:'Sfi.Site', id:'global.tomain')}">
-		<h1><f:translate package="Sfi.Site" id="global.fulltitle"/></h1>
-	</neos:link.node>
-	<nav>{mainMenu -> f:format.raw()}</nav>
+<header class="Header fixedWidth">
+	<div class="paddingVertical-single">
+		<neos:link.node node="~" title="{f:translate(package:'Sfi.Site', id:'global.tomain')}">
+			<img width="300px" src="{f:uri.resource(path: 'images/PsmbFish.svg', package: 'Sfi.Site')}" alt="Преображенское братство">
+		</neos:link.node>
+	</div>
+	<nav class="show-for-medium">{mainMenu -> f:format.raw()}</nav>
 </header>
+<div class="Masthead" style="background-image: url({coverImageUri})">
+	<div class="Masthead-overlay textAlign-center paddingTop-triple paddingBottom-double">
+		<div class="fixedWidth">
+			<h1 class="Masthead-headline H0 color-white paddingVertical-single">{neos:contentElement.editable(property: 'headline', tag: 'span')}</h1>
+			<h2 class="Masthead-subHeadline H1Alt color-white ">{neos:contentElement.editable(property: 'subHeadline', tag: 'span')}</h2>
+			<p class="Masthead-location H2 color-white paddingTop-single paddingBottom-double">{neos:contentElement.editable(property: 'location', tag: 'span')}</p>
+			<f:if condition="{isMain}">
+				<f:then>
+					<div class="Masthead-summary Fox color-white paddingVertical-single">{neos:contentElement.editable(property: 'summary')}</div>
+				</f:then>
+				<f:else><div style="height: 112px;"></f:else>
+			</f:if>
+		</div>
+	</div>
+</div>
+<nav class="show-for-small-only fixedWidth">{mainMenu -> f:format.raw()}</nav>

@@ -1,0 +1,7 @@
+prototype(S:VenuePage) {
+	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/VenuePage.html'
+	main = TYPO3.Neos:ContentCollection {
+		nodePath = 'main'
+	}
+	venuesMenu = S:VenuesMenu
+}

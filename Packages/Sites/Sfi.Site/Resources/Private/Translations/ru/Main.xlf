@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file original="" source-language="ru" datatype="plaintext">
         <body>
-            <trans-unit id="global.fulltitle">
-                <source>Название сайта</source>
+            <trans-unit id="global.psmb">
+                <source>Преображенское братство</source>
             </trans-unit>
             <trans-unit id="global.shorttitle">
                 <source>КороткоеНазвание</source>

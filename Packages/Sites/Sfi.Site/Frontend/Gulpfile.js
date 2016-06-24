@@ -26,7 +26,7 @@ var output = './built';
 
 gulp.task('serve', allTasks, function () {
 	browserSync.init({
-		proxy: 'dev.domain.loc'
+		proxy: 'dev.festival.psmb.loc'
 	});
 
 	gulp.watch(inputSass, ['sass'])

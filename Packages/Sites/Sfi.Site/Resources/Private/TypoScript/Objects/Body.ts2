@@ -1,11 +1,12 @@
-prototype(Sfi.Site:Body) < prototype(T:Template) {
+prototype(S:Body) < prototype(T:Template) {
 	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Body.html'
-	header = Sfi.Site:Header
+	header = S:Header
 	main = PrimaryContent {
 		renderByType {
 			condition = TRUE
 			type = ${q(node).property('_nodeType.name')}
 		}
 	}
-	footer = Sfi.Site:Footer
+	footer = S:Footer
+	@process.contentElementWrapping = ContentElementWrapping
 }
