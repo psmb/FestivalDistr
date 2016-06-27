@@ -2,24 +2,708 @@
 <root>
  <site name="Site" state="1" siteResourcesPackageKey="Sfi.Site" siteNodeName="site">
   <nodes formatVersion="2.0">
-   <node nodeName="site">
-    <variant workspace="live" nodeType="Sfi.Site:VenuePage" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-
-     </dimensions>
+   <node identifier="4b414596-34bd-4d6a-b8f0-5aa71fd66a14" nodeName="site">
+    <variant sortingIndex="100" workspace="live" nodeType="Sfi.Site:MainPage" version="8" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
      <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2016-06-23T15:45:42+03:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T19:38:42+03:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T19:38:42+03:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
+      <canonicalLink __type="string"></canonicalLink>
+      <coverImage __type="object" __identifier="f7162424-7372-4e45-ba88-e1b7aaade8e9" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f7162424-7372-4e45-ba88-e1b7aaade8e9&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0c8ca91f-2629-4443-a79c-e96cce02d588&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_914.jpg&quot;,&quot;hash&quot;:&quot;3eaf5fc04289b6a224c89e43c3c041ae57ca6fd1&quot;,&quot;__identity&quot;:&quot;53315daf-cda0-4c90-8bef-62651d3b881a&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:618,&quot;position&quot;:10,&quot;width&quot;:1500,&quot;x&quot;:0,&quot;y&quot;:225,&quot;__identity&quot;:&quot;d5d92ee4-75a0-43e2-870a-78bb2790b699&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</coverImage>
+      <headline __type="string">Имеющие надежду</headline>
+      <subHeadline __type="string">Фестиваль «Преображенские встречи»</subHeadline>
+      <location __type="string">20–21 августа, Москва</location>
+      <summary __type="string">&lt;p&gt;В субботу 20.08 – актуальные вопросы жизни церкви, 13 фестивальн&lt;/p&gt;&lt;p&gt;В воскресение 21.08 – литургия в храме Христа Спасителя&lt;/p&gt;</summary>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
      </properties>
     </variant>
-    <node nodeName="main">
-     <variant workspace="live" nodeType="TYPO3.Neos:ContentCollection" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-
-      </dimensions>
+    <node identifier="88345773-254f-7c1e-6bb5-9ebf125693dc" nodeName="gallery">
+     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
       <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T11:18:46+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T11:18:46+03:00</lastModificationDateTime>
+      <properties/>
      </variant>
+     <node identifier="84df842d-55c2-40d8-842e-2777d4886ddc" nodeName="node-576d247720c50">
+      <variant sortingIndex="100" workspace="live" nodeType="Psmb.NodeTypes:Image" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:15:51+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:28:11+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:28:11+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_2459.jpg&quot;,&quot;hash&quot;:&quot;99bb51da97d8cea1848e620befc2f282b486aca1&quot;,&quot;__identity&quot;:&quot;25f5a32b-91e1-4cf9-946e-4815f14e5fee&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="cb7b6348-98af-42d2-9afb-464fd6539ac9" nodeName="node-576d247b6d26a">
+      <variant sortingIndex="200" workspace="live" nodeType="Psmb.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:15:55+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="89439f2d-4d32-4601-b130-9a2402eb9272" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;89439f2d-4d32-4601-b130-9a2402eb9272&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_628.jpg&quot;,&quot;hash&quot;:&quot;c5e5f270db46c18bb44b3ea4f25bb88a57dc3467&quot;,&quot;__identity&quot;:&quot;18a67a47-0848-4595-b829-d1cc8a751d9d&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="1c83bd10-163e-436e-bf38-3062e9240246" nodeName="node-576d247c1aa86">
+      <variant sortingIndex="216" workspace="live" nodeType="Psmb.NodeTypes:Image" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:15:56+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="1c34b3e8-c674-496a-ad71-133ca3273816" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;1c34b3e8-c674-496a-ad71-133ca3273816&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_558.jpg&quot;,&quot;hash&quot;:&quot;76ccafefe1c7e49ff2b800a97c1741177b123415&quot;,&quot;__identity&quot;:&quot;76b7c89c-23c4-4c9b-bd9f-48439c649885&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="6e50dd72-3014-4709-a479-0dc7d0505a0d" nodeName="node-576d24812f525">
+      <variant sortingIndex="300" workspace="live" nodeType="Psmb.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:16:01+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="0e5da9fb-6d41-4a02-aaed-3251505ff1c5" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;0e5da9fb-6d41-4a02-aaed-3251505ff1c5&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_9409.jpg&quot;,&quot;hash&quot;:&quot;b46caa8dab5accc31c0d9ecf3db2e7c03fd80801&quot;,&quot;__identity&quot;:&quot;1b11c989-0c4f-4c79-ae0a-816c512c1859&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="6e26000f-08f7-4c15-b98f-7094cf629c03" nodeName="node-576d248930654">
+      <variant sortingIndex="225" workspace="live" nodeType="Psmb.NodeTypes:Image" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:16:09+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="7101aeb2-1862-4690-a9c4-815e71c6f090" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7101aeb2-1862-4690-a9c4-815e71c6f090&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_9786.jpg&quot;,&quot;hash&quot;:&quot;5a38100acf40ad5fdacd6a20e0fd4e5b01661897&quot;,&quot;__identity&quot;:&quot;2de17c19-cd13-4a37-9cf7-7a02bc3107c2&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="88603c1d-3b91-41a6-8123-2a0a7942ed91" nodeName="node-576d248bd537b">
+      <variant sortingIndex="213" workspace="live" nodeType="Psmb.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:16:11+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="5a69bf6c-25b0-4f85-84d1-127a51481506" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;5a69bf6c-25b0-4f85-84d1-127a51481506&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_634.jpg&quot;,&quot;hash&quot;:&quot;a5d2cd04e7f8acfad566ced6275249d92fe2d179&quot;,&quot;__identity&quot;:&quot;01af99f9-f934-46be-8d09-9d1fec9c4578&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="a88cab91-65cb-4c91-87ac-edc59a6f6fce" nodeName="node-576d248e5ee8f">
+      <variant sortingIndex="125" workspace="live" nodeType="Psmb.NodeTypes:Image" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:16:14+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="45cf1c71-d1a2-45d9-aad3-a14b6a541f74" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;45cf1c71-d1a2-45d9-aad3-a14b6a541f74&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;csm_1_53_IMG_2594_773c11411b.jpg&quot;,&quot;hash&quot;:&quot;89544aa62d355309b08449033cd9879b0b4c53b8&quot;,&quot;__identity&quot;:&quot;4f14844f-6051-4c1b-894b-675fdc8ec8e1&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="97188a01-8e3e-4520-87ca-1478059aa6d4" nodeName="node-576d2a4d70789">
+      <variant sortingIndex="207" workspace="live" nodeType="Psmb.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T15:40:45+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:40:58+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:40:58+03:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="f720ec0f-0dca-4977-9a74-70e6e6b55a6d" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;f720ec0f-0dca-4977-9a74-70e6e6b55a6d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_0324.jpg&quot;,&quot;hash&quot;:&quot;3bfc82cac206fdcff2bfd344c33f11a1bd567630&quot;,&quot;__identity&quot;:&quot;0dce895d-19bb-47b1-8f2a-ef9cc86d4120&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="a066467f-cc1f-e186-01e2-8f3bb5aaead3" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-23T15:45:42+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T11:18:12+03:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="82ea256d-96dd-4c29-8b8c-a5639346d9d1" nodeName="node-576d81b6dff96">
+      <variant sortingIndex="25" workspace="live" nodeType="Psmb.NodeTypes:Container" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T21:53:42+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T21:58:59+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T21:58:59+03:00</lastPublicationDateTime>
+       <properties>
+        <class __type="string">fixedWidth</class>
+       </properties>
+      </variant>
+      <node identifier="836e85a7-8e41-429d-92b1-15e9539c048d" nodeName="node-576d84f013ac0">
+       <variant sortingIndex="550" workspace="live" nodeType="Sfi.Grid:Row" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2016-06-24T22:07:28+03:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="08eb878c-4e20-4aaa-899e-f2f3ceaf1860" nodeName="node-576d84faa7bfc">
+        <variant sortingIndex="100" workspace="live" nodeType="Sfi.Grid:Column" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-06-24T22:07:38+03:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+         <properties>
+          <large __type="string">large-8</large>
+          <medium __type="string">medium-10</medium>
+          <small __type="string">small-12</small>
+          <largeOffset __type="string">large-offset-2</largeOffset>
+          <mediumOffset __type="string">medium-offset-1</mediumOffset>
+          <smallOffset __type="string"></smallOffset>
+         </properties>
+        </variant>
+        <node identifier="987a016d-f4d0-457e-847b-e1612374ce66" nodeName="node-576d2f5ab8756">
+         <variant sortingIndex="250" workspace="live" nodeType="Psmb.NodeTypes:Lead" version="7" removed="" hidden="" hiddenInIndex="">
+          <dimensions/>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:02:18+03:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+          <properties>
+           <text __type="string">Приглашаем вас принять участие в фестивале «Преображенские встречи». Тема фестиваля — «Имеющие надежду» (1 Фес. 4:13).</text>
+          </properties>
+         </variant>
+        </node>
+        <node identifier="274da4b9-a540-43f7-90de-182be11efd50" nodeName="node-576d3413944a9">
+         <variant sortingIndex="350" workspace="live" nodeType="Psmb.NodeTypes:Text" version="33" removed="" hidden="" hiddenInIndex="">
+          <dimensions/>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:22:27+03:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+          <properties>
+           <text __type="string">&lt;p&gt;Человеку, живущему в эпоху кризиса — духовного, культурного, социального, экономического, — трудно противостоять панике и страхам, сохранять уверенность в сегодняшнем и завтрашнем дне, действовать творчески и свободно.&lt;/p&gt;&lt;p&gt;В кризисные исторические времена именно Церковь сохраняла надежду и делилась ею с тоскующим миром. При этом надежда христиан была основана не на социальном оптимизме или пессимизме, но на живой и действенной вере в Господа нашего Иисуса Христа, Который однажды вошел в человеческую историю и продолжает действовать в ней, призывая и нас разделить Его путь и Его труд. &lt;/p&gt;&lt;p&gt;Как могут православные христиане свидетельствовать о своей надежде в ситуации современного кризиса? Сохранять присутствие духа, возвещать о Христе словом и жизнью, собирать живые силы церкви и общества, совершать непрестанные усилия духа, направленные на встречу с Богом и ближним, на обретение любви и свободы. Во многом от наших объединенных усилий зависит, окажется ли кризис «не только проклятием, но и благословением» (из выступления Патриарха Кирилла 22.03.2009); «болезнью не к смерти, но к славе Божией» (Ин 11:4). &lt;/p&gt;</text>
+          </properties>
+         </variant>
+        </node>
+        <node identifier="c52baade-0a72-4a33-b56b-ddc5c66404d9" nodeName="node-576d35f1aaee6">
+         <variant sortingIndex="650" workspace="live" nodeType="Sfi.Grid:Row" version="5" removed="" hidden="" hiddenInIndex="">
+          <dimensions/>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:30:25+03:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="2eab230f-e14d-44d7-9fa2-a3283cbc7576" nodeName="node-576d3611aeeeb">
+          <variant sortingIndex="100" workspace="live" nodeType="Sfi.Grid:Column" version="5" removed="" hidden="" hiddenInIndex="">
+           <dimensions/>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:30:57+03:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+           <properties>
+            <large __type="string">large-3</large>
+            <medium __type="string">medium-4</medium>
+            <small __type="string">small-12</small>
+            <largeOffset __type="string"></largeOffset>
+            <mediumOffset __type="string"></mediumOffset>
+            <smallOffset __type="string"></smallOffset>
+           </properties>
+          </variant>
+          <node identifier="e4a21d3d-745c-4d5f-b89a-465274de04e5" nodeName="node-576d3758cb27f">
+           <variant sortingIndex="100" workspace="live" nodeType="Psmb.NodeTypes:Image" version="5" removed="" hidden="" hiddenInIndex="">
+            <dimensions/>
+            <accessRoles __type="array"/>
+            <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:36:24+03:00</creationDateTime>
+            <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+            <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+            <properties>
+             <image __type="object" __identifier="819eb5f8-2ac1-41c9-ae91-a43961f986b2" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;819eb5f8-2ac1-41c9-ae91-a43961f986b2&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_2459.jpg&quot;,&quot;hash&quot;:&quot;99bb51da97d8cea1848e620befc2f282b486aca1&quot;,&quot;__identity&quot;:&quot;25f5a32b-91e1-4cf9-946e-4815f14e5fee&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1852,&quot;position&quot;:10,&quot;width&quot;:1853,&quot;x&quot;:2020,&quot;y&quot;:158,&quot;__identity&quot;:&quot;d4bb9963-9eca-45b1-a5b6-c90eb26bf4e3&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+            </properties>
+           </variant>
+          </node>
+         </node>
+         <node identifier="0c439382-430e-4c22-8cd3-ca6a50a278ac" nodeName="node-576d3616d97f3">
+          <variant sortingIndex="200" workspace="live" nodeType="Sfi.Grid:Column" version="6" removed="" hidden="" hiddenInIndex="">
+           <dimensions/>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:31:02+03:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+           <properties>
+            <large __type="string">large-9</large>
+            <medium __type="string">medium-8</medium>
+            <small __type="string">small-12</small>
+            <largeOffset __type="string"></largeOffset>
+            <mediumOffset __type="string"></mediumOffset>
+            <smallOffset __type="string"></smallOffset>
+           </properties>
+          </variant>
+          <node identifier="be9c1c28-8166-4795-93f7-a891a2c4049d" nodeName="node-576d37b41d7da">
+           <variant sortingIndex="100" workspace="live" nodeType="Psmb.NodeTypes:Text" version="12" removed="" hidden="" hiddenInIndex="">
+            <dimensions/>
+            <accessRoles __type="array"/>
+            <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:37:56+03:00</creationDateTime>
+            <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+            <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+            <properties>
+             <text __type="string">Дмитрий Гасак, председатель&lt;br/&gt;Преображенского братства</text>
+            </properties>
+           </variant>
+          </node>
+         </node>
+        </node>
+        <node identifier="a03369d7-c747-40e1-938d-115358282ffd" nodeName="node-576d3cb51426a">
+         <variant sortingIndex="550" workspace="live" nodeType="Psmb.NodeTypes:Text" version="10" removed="" hidden="" hiddenInIndex="">
+          <dimensions/>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2016-06-24T16:59:17+03:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+          <properties>
+           <text __type="string">&lt;p&gt;Организаторы фестиваля – Преображенское содружество малых православных братств – крупнейшее в России неформальное объединение православных верующих четверть века существующее в РПЦ. За это время члены движения накопили опыт в самых разных сферах церковной жизни – миссии, катехизации, духовного образования, возрождения приходской и общинно-братской жизни, христианского воспитания детей и молодежи, собирания опыта новомучеников и исповедников, налаживания каритативной деятельности, культурных и церковно-общественных связей.&lt;/p&gt;</text>
+          </properties>
+         </variant>
+        </node>
+       </node>
+      </node>
+     </node>
+     <node identifier="0bcb7473-3feb-4264-ac4e-0a798b20dddc" nodeName="node-576d83845c045">
+      <variant sortingIndex="97" workspace="live" nodeType="Psmb.NodeTypes:Container" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T22:01:37+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:03:41+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:03:41+03:00</lastPublicationDateTime>
+       <properties>
+        <class __type="string">backgroundColor-gray</class>
+       </properties>
+      </variant>
+      <node identifier="826590a9-0772-46e9-b12f-bfc2d07f9189" nodeName="node-576d83e19ed95">
+       <variant sortingIndex="100" workspace="live" nodeType="Psmb.NodeTypes:Container" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2016-06-24T22:02:57+03:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:03:41+03:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:03:41+03:00</lastPublicationDateTime>
+        <properties>
+         <class __type="string">fixedWidth</class>
+        </properties>
+       </variant>
+       <node identifier="df6ee054-5b3a-472a-8723-961a7524b745" nodeName="node-576d85567bfca">
+        <variant sortingIndex="600" workspace="live" nodeType="Sfi.Grid:Row" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-06-24T22:09:10+03:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+        <node identifier="e16b6f46-6aa5-4a3f-b47a-427f841b0e29" nodeName="node-576d855ccba0a">
+         <variant sortingIndex="100" workspace="live" nodeType="Sfi.Grid:Column" version="3" removed="" hidden="" hiddenInIndex="">
+          <dimensions/>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2016-06-24T22:09:16+03:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+          <properties>
+           <large __type="string">large-8</large>
+           <medium __type="string">medium-10</medium>
+           <small __type="string">small-12</small>
+           <largeOffset __type="string">large-offset-2</largeOffset>
+           <mediumOffset __type="string">medium-offset-1</mediumOffset>
+           <smallOffset __type="string"></smallOffset>
+          </properties>
+         </variant>
+         <node identifier="d0aaecf7-8912-4d93-a120-cb505f94b817" nodeName="node-576c1c181f442">
+          <variant sortingIndex="300" workspace="live" nodeType="Sfi.Site:PaperCard" version="6" removed="" hidden="" hiddenInIndex="">
+           <dimensions/>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2016-06-23T20:27:52+03:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+           <properties>
+            <title __type="string">Программа</title>
+            <navTitle __type="string">schedule</navTitle>
+           </properties>
+          </variant>
+         </node>
+         <node identifier="63fe62ac-7441-409a-a646-7301fd58e306" nodeName="node-576c20f60b07d">
+          <variant sortingIndex="500" workspace="live" nodeType="Sfi.Site:PaperCard" version="8" removed="" hidden="" hiddenInIndex="">
+           <dimensions/>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2016-06-23T20:48:38+03:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+           <properties>
+            <title __type="string">Фестивальные площадки</title>
+            <navTitle __type="string">venues</navTitle>
+           </properties>
+          </variant>
+          <node identifier="919f8bd4-1d3d-49b3-bfcc-e5df51597701" nodeName="node-576c239b23148">
+           <variant sortingIndex="100" workspace="live" nodeType="Sfi.Site:VenuesMenu" version="4" removed="" hidden="" hiddenInIndex="">
+            <dimensions/>
+            <accessRoles __type="array"/>
+            <creationDateTime __type="object" __classname="DateTime">2016-06-23T20:59:55+03:00</creationDateTime>
+            <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+            <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+            <properties/>
+           </variant>
+          </node>
+         </node>
+         <node identifier="fe386d14-cffe-43e1-9671-0aec663902bf" nodeName="node-576c20fd0085d">
+          <variant sortingIndex="600" workspace="live" nodeType="Sfi.Site:PaperCard" version="7" removed="" hidden="" hiddenInIndex="">
+           <dimensions/>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2016-06-23T20:48:45+03:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
+           <properties>
+            <title __type="string">Контакты</title>
+            <navTitle __type="string">contacts</navTitle>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+    </node>
+    <node identifier="976e2351-5212-4250-8527-eeddfe9ad701" nodeName="node-576d3d3bbac0e">
+     <variant sortingIndex="500" workspace="live" nodeType="Sfi.Site:VenuePage" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:31+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">missiia</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Миссия</title>
+      </properties>
+     </variant>
+     <node identifier="07036823-b9fa-03ec-801a-2aa67db14359" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:31+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="bbca36dc-0560-4dbc-a425-951fd49e24fe" nodeName="node-576d3d48a0342">
+     <variant sortingIndex="550" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:44+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">katiekhizatsiia</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Катехизация</title>
+      </properties>
+     </variant>
+     <node identifier="d82c10a8-c965-cffd-4cb9-8fa06a8a9a0b" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:44+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="43c0bf15-0e28-4605-9234-c2dcfae7e409" nodeName="node-576d3d51742d1">
+     <variant sortingIndex="600" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:53+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">dukhovnoie-obrazovaniie</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Духовное образование</title>
+      </properties>
+     </variant>
+     <node identifier="b95fe397-242c-a503-6dfa-1964a0eb028b" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:53+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="014e5584-97c3-4efc-8a3e-9830807aac94" nodeName="node-576d3d5df08d1">
+     <variant sortingIndex="650" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:05+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">obshchinnaia-zhizn</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Общинная жизнь</title>
+      </properties>
+     </variant>
+     <node identifier="211cfdc1-62d5-6ae8-ae6e-4817416aafa5" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:06+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="b2f6f3c3-dae1-47d7-b250-d9f8e1f0fe50" nodeName="node-576d3d653efb4">
+     <variant sortingIndex="700" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:13+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">bratstva-v-tsierkvi</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Братства в церкви</title>
+      </properties>
+     </variant>
+     <node identifier="81f48eb4-dbe3-873c-dc62-6dab34aaebca" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:13+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="bc9a26f3-c60e-47f9-9560-80e90e09588b" nodeName="node-576d3d6b4c545">
+     <variant sortingIndex="750" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:19+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">tsierkov-i-smi</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Церковь и СМИ</title>
+      </properties>
+     </variant>
+     <node identifier="aeef05c6-4296-f23b-d1ec-a3a23c0db4df" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:19+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="5343a348-7e6c-4f3a-81ca-305c890d64eb" nodeName="node-576d3d72858e1">
+     <variant sortingIndex="800" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:26+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">otnoshieniia-tsierkvi-i-obshchiestva</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Отношения церкви и общества</title>
+      </properties>
+     </variant>
+     <node identifier="3131c872-aee7-e707-7905-2b3150476d6e" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:26+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="40689c30-aeca-479b-9e09-b85d2f6dd200" nodeName="node-576d3d7c53071">
+     <variant sortingIndex="850" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:36+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">izuchieniie-tsierkovnoi-istorii-xx-vieka</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Изучение церковной истории XX века</title>
+      </properties>
+     </variant>
+     <node identifier="f6316378-ff67-8622-b06e-67425187a548" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:36+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="80b8ad89-2e3f-43e2-b541-adcae1e93f1d" nodeName="node-576d3d8d614f3">
+     <variant sortingIndex="900" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:53+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">liturghichieskaia-zhizn-tsierkvi</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Литургическая жизнь церкви</title>
+      </properties>
+     </variant>
+     <node identifier="0ac9ac6b-9cd2-50cd-275a-46320b3f3286" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:53+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="58905933-55f7-4a67-b55d-73b92ab7f9c2" nodeName="node-576d3d957017c">
+     <variant sortingIndex="950" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:01+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">sozidaniie-khristianskogho-iedinstva</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Созидание христианского единства</title>
+      </properties>
+     </variant>
+     <node identifier="8f0905d4-78bb-74ad-cfc6-498575bb26de" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:01+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="9cc3f8ac-2cf3-48f9-be66-c0dc1b5be0b5" nodeName="node-576d3da1474a6">
+     <variant sortingIndex="1000" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:13+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">khristianskoie-vospitaniie-dietiei</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Христианское воспитание детей</title>
+      </properties>
+     </variant>
+     <node identifier="64d15ab6-13b0-3e14-9df7-6211fe28748b" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:13+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="ae4ac176-7f1b-4dac-8a61-d8cea5caf163" nodeName="node-576d3daceace3">
+     <variant sortingIndex="1050" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:24+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">votsierkovlieniie-molodiezhi</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Воцерковление молодежи</title>
+      </properties>
+     </variant>
+     <node identifier="266b16f5-d0f5-e751-f04b-22ff08aa86c9" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:24+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="079ae889-1992-448d-b587-a07d63be6375" nodeName="node-576d3db5a6c8c">
+     <variant sortingIndex="1100" workspace="live" nodeType="Sfi.Site:VenuePage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:33+03:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">blaghotvoritiel-nost-i-milosierdiie</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Благотворительность и милосердие</title>
+      </properties>
+     </variant>
+     <node identifier="db91313d-25e6-86b9-121c-e11a53b0118c" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:33+03:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:47+03:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
     </node>
    </node>
   </nodes>
