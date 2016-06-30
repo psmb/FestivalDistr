@@ -1,3 +1,6 @@
+prototype(Psmb.NodeTypes:Lead) {
+  attributes.class = 'Lead marginBottom-double'
+}
 prototype(Psmb.NodeTypes:Text) {
   attributes.class = 'RteText'
 }

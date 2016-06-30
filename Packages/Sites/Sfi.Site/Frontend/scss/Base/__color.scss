@@ -24,6 +24,14 @@ $color-primaryAlt: $blue;
 	color: $color-primaryAlt !important;
 }
 
+.color-gray {
+	color: $gray;
+}
+
+.color-grayLight {
+	color: $gray-light;
+}
+
 .backgroundColor-primary {
 	background-color: $color-primary !important;
 }
