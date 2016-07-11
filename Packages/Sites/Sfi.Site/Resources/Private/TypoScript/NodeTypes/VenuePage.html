@@ -1,3 +1,5 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
 <div class="backgroundColor-gray">
 	<div class="fixedWidth">
 		<div class="row">
@@ -5,7 +7,7 @@
 				<div style="position: relative; top: -112px" class="backgroundColor-white padding-double margin-single">
 					<!-- TODO: i18n -->
 					<p class="Woody marginBottom-half">Фестивальная площадка «{title}»</p>
-					<h1 class="H1 marginBottom-single">{title}</h1>
+					<h1 class="H1 marginBottom-single">{neos:contentElement.editable(property: 'fullTitle', tag: 'span')}</h1>
 					{main -> f:format.raw()}
 				</div>
 			</div>

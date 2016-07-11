@@ -81,3 +81,11 @@ blah: &alohaPlain
       type: 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Страница площадки'
+  properties:
+    fullTitle:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          <<: *alohaPlain
+          placeholder: 'Полное название площадки'
