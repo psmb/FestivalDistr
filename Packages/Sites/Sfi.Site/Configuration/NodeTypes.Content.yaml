@@ -10,10 +10,11 @@
     - 'TYPO3.Neos:Content'
     - 'TYPO3.Neos:ContentCollection'
   ui:
+    label: 'Секция'
     inspector:
       groups:
         nav:
-          label: 'Навигационная секция'
+          label: 'Секция'
   constraints:
     nodeTypes:
       '*': true
@@ -34,7 +35,7 @@
     title:
       type: string
       ui:
-        label: 'Название для меню'
+        label: 'Название'
         inspector:
           group: 'nav'
 
@@ -43,3 +44,26 @@
     - 'Sfi.Site:NavSection'
   ui:
     label: 'Секция-листик'
+
+
+'Sfi.Site:ScheduleRow':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+    - 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Строка расписания'
+  constraints:
+    nodeTypes:
+      '*': true
+  properties:
+    time:
+      type: string
+      defaultValue: '0:00–1:00'
+      ui:
+        inlineEditable: true
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Название'

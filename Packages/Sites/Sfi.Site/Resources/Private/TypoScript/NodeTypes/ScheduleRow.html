@@ -1,0 +1,11 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<div class="row marginBottom-double">
+	<div class="columns small-12 medium-4">
+		<p class="Paragraph">{neos:contentElement.editable(property: 'time', tag: 'span')}</p>
+	</div>
+	<div class="columns small-12 medium-8">
+		<p class="Paragraph  marginBottom-double">{neos:contentElement.editable(property: 'title', tag: 'span')}</p>
+		{main -> f:format.raw()}
+	</div>
+</div>

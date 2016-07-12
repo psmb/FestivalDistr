@@ -1,0 +1,6 @@
+prototype(Sfi.Site:ScheduleRow) {
+	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/ScheduleRow.html'
+	main = ContentCollectionRenderer {
+		@process.contentElementWrapping = ContentElementWrapping
+	}
+}
