@@ -81,3 +81,45 @@
 	font-weight: 400;
 	line-height: $lineHeight-tight;
 }
+
+.Ul {
+	list-style-type: disc;
+	padding-left: 2*$u;
+
+	&.neos-list-circle {
+		list-style-type: circle;
+	}
+
+	&.neos-list-square {
+		list-style-type: square;
+	}
+}
+
+.Ol {
+	list-style-type: decimal;
+	padding-left: 2*$u;
+
+	&.neos-list-decimal-leading-zero {
+		list-style-type: decimal-leading-zero;
+	}
+
+	&.neos-list-lower-roman {
+		list-style-type: lower-roman;
+	}
+
+	&.neos-list-upper-roman {
+		list-style-type: upper-roman;
+	}
+
+	&.neos-list-lower-greek {
+		list-style-type: lower-greek;
+	}
+
+	&.neos-list-lower-latin {
+		list-style-type: lower-latin;
+	}
+
+	&.neos-list-upper-latin {
+		list-style-type: upper-latin;
+	}
+}

@@ -11,4 +11,12 @@
 		@extend .Paragraph;
 		margin-bottom: $u;
 	}
+
+	ul {
+		@extend .Ul;
+	}
+
+	ol {
+		@extend .Ol;
+	}
 }
