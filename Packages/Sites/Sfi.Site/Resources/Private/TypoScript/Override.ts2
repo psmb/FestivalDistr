@@ -15,3 +15,7 @@ prototype(Psmb.NodeTypes:Image) {
 prototype(TYPO3.TypoScript:Collection) {
 	itemName = 'node'
 }
+
+prototype(Psmb.NodeTypes:Epigraph) {
+  attributes.class = 'Epigraph RteText small-12 medium-8 medium-offset-4'
+}

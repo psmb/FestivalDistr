@@ -79,7 +79,16 @@
 .Squirrel {
 	font-size: rem-calc(14);
 	font-weight: 400;
-	line-height: $lineHeight-tight;
+	line-height: $lineHeight-normal;
+}
+
+.Epigraph {
+	font-size: rem-calc(16);
+	font-weight: 400;
+	line-height: $lineHeight-normal;
+	text-align: right;
+	font-style: italic;
+	margin-bottom: $u;
 }
 
 .Ul {
