@@ -1,8 +1,8 @@
-prototype(S:PaperCard) < prototype(T:Tag) {
-	attributes.class = 'PaperCard'
+prototype(S:Section) < prototype(T:Tag) {
+	attributes.class = 'Section'
 	attributes.id = ${node.properties.navTitle}
 	content = T:Array {
-		title = ${'<h2 class="PaperCard-title H1">' + node.properties.title + '</h2>'}
+		title = ${'<h2 class="Section-title H2 color-primary marginTop-triple marginHorizontal-none border-bottom paddingBottom-half marginBottom-single">' + node.properties.title + '</h2>'}
 		title.@process.contentElementEditable = ContentElementEditable {
 			property = 'title'
 		}

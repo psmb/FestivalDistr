@@ -58,6 +58,7 @@
       type: string
       ui:
         label: 'Название'
+        reloadPageIfChanged: true
         inspector:
           group: 'nav'
 
@@ -67,6 +68,11 @@
   ui:
     label: 'Секция-листик'
 
+'Sfi.Site:Section':
+  superTypes:
+    - 'Sfi.Site:NavSection'
+  ui:
+    label: 'Блок с заголовком'
 
 'Sfi.Site:ScheduleRow':
   superTypes:
