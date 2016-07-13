@@ -6,8 +6,7 @@ prototype(S:PaperCard) < prototype(T:Tag) {
 		title.@process.contentElementEditable = ContentElementEditable {
 			property = 'title'
 		}
-		children = ContentCollectionRenderer {
-			@process.contentElementWrapping = ContentElementWrapping
-		}
+		children = ContentCollectionRenderer
+		@process.contentElementWrapping = ContentElementWrapping
 	}
 }
