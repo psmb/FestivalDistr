@@ -1,9 +1,9 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <header class="Header fixedWidth">
 	<div class="paddingVertical-single">
-		<neos:link.node node="~" title="{f:translate(package:'Sfi.Site', id:'global.tomain')}">
+		<a href="http://psmb.ru" title="{f:translate(package:'Sfi.Site', id:'global.tomain')}">
 			<img width="300px" src="{f:uri.resource(path: 'images/PsmbFish.svg', package: 'Sfi.Site')}" alt="Преображенское братство">
-		</neos:link.node>
+		</a>
 	</div>
 	<nav class="show-for-medium">{mainMenu -> f:format.raw()}</nav>
 </header>
