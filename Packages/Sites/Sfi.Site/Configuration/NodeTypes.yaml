@@ -1,0 +1,6 @@
+'TYPO3.Neos:Node':
+  ui:
+    inspector:
+      groups:
+        base:
+          label: 'Основные'

@@ -2,7 +2,7 @@ prototype(Psmb.NodeTypes:Lead) {
   attributes.class = 'Lead marginBottom-double'
 }
 prototype(Psmb.NodeTypes:Text) {
-  attributes.class = 'RteText'
+  attributes.class = ${'RteText ' + node.properties.variant}
 }
 prototype(Psmb.NodeTypes:Headline) {
   attributes.class = 'RteText'

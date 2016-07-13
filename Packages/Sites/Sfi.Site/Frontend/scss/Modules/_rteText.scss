@@ -7,16 +7,32 @@
 		}
 	}
 
-	p {
-		@extend .Paragraph;
-		margin-bottom: $u;
-	}
-
 	ul {
 		@extend .Ul;
 	}
 
 	ol {
 		@extend .Ol;
+	}
+}
+
+.RteText.Paragraph {
+	p {
+		@extend .Paragraph;
+		margin-bottom: $u;
+	}
+}
+
+.RteText.Epigraph {
+	p {
+		@extend .Epigraph;
+		margin-bottom: $u;
+	}
+}
+
+.RteText.Squirrel {
+	p {
+		@extend .Squirrel;
+		margin-bottom: $u;
 	}
 }

@@ -1,3 +1,25 @@
+'Psmb.NodeTypes:Text':
+  properties:
+    variant:
+      type: string
+      ui:
+        label: 'Вариант'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'base'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            defaultValue: 'Paragraph'
+            allowEmpty: TRUE
+            values:
+              Paragraph:
+                label: 'Paragraph'
+              'Squirrel color-grayLight':
+                label: 'Squirrel color-grayLight'
+              Epigraph:
+                label: 'Epigraph'
+
+
 'Sfi.Site:VenuesMenu':
   superTypes:
     - 'TYPO3.Neos:Content'
