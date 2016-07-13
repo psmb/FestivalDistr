@@ -1,0 +1,855 @@
+# Borrowed from https://raw.githubusercontent.com/million12/M12.Foundation/master/Configuration/NodeTypes.yaml
+
+# Base node: define extra inspector tabs
+'TYPO3.Neos:Node':
+  ui:
+    inspector:
+      tabs:
+        view:
+          label: 'Visual options'
+          position: 30
+          icon: 'icon-tint'
+        device:
+          label: 'Device settings'
+          position: 50
+          icon: 'icon-desktop'
+        dev:
+          label: 'Developer options'
+          position: 80
+          icon: 'icon-code'
+
+
+
+# -----------------------------------------------------------------------------
+#
+# Abstract: foundation helper classes
+#
+# -----------------------------------------------------------------------------
+'M12.Foundation:AbstractGenericHelpers':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        utilityClasses:
+          label: 'Functional options'
+          position: 93
+          tab: meta
+        visibilityClasses:
+          label: 'Responsive options'
+          position: 94
+          tab: device
+  properties:
+    classHide:
+      type: boolean
+      ui:
+        label: 'Visually hide'
+        help:
+          message: |
+            When set, element will be rendered in HTML output, but will be visually hidden.
+
+            Developer info: it's achieved by adding `hide` CSS class to the element. Use it if you want programatically hide/show some element(s).
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'
+    classFloat:
+      type: string
+      ui:
+        label: 'Float'
+        help:
+          message: |
+            The float option specifies that an element should be taken from the normal flow and placed along the `left` or `right` side of its container. It's called _float layouts_ where elements are floated to be stack horizontally. Text and other elements will then wrap around the floated one.
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'utilityClasses'
+          position: 30
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              left:
+                label: 'left'
+              right:
+                label: 'right'
+    classClearfix:
+      type: boolean
+      ui:
+        label: 'Clear Float'
+        help:
+          message: |
+            There are two cases you might want to use this option:
+
+            1. Set it together with _Float_ option to combat [the zero-height container problem](http://complexspiral.com/publications/containing-floats/). Read on the information there to learn more about the problem.
+            2. Set it on a content elements following that one with _Float_ option set. You do that to stop the wrapping behaviour around a floated element.
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'utilityClasses'
+          position: 33 # after `classFloat`
+    classShowByScreenSize:
+      type: string
+      ui:
+        label: 'Show by screen size'
+        help:
+          message: "Set the visibility of the content element for a particular device."
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibilityClasses'
+          position: 10
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              show-for-small-only:
+                label: 'Show for small only'
+              show-for-medium-up:
+                label: 'Show for medium and up'
+              show-for-medium-only:
+                label: 'Show for medium only'
+              show-for-large-up:
+                label: 'Show for large and up'
+              show-for-large-only:
+                label: 'Show for large only'
+              show-for-xlarge-up:
+                label: 'Show for xlarge and up'
+              show-for-xlarge-only:
+                label: 'Show for xlarge only'
+              show-for-xxlarge-up:
+                label: 'Show for xxlarge and up'
+    classHideByScreenSize:
+      type: string
+      ui:
+        label: 'Hide by screen size'
+        help:
+          message: "Set the visibility of the content element for a particular device."
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibilityClasses'
+          position: 20
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              hide-for-small-only:
+                label: 'Hide for small only'
+              hide-for-medium-up:
+                label: 'Hide for medium and up'
+              hide-for-medium-only:
+                label: 'Hide for medium only'
+              hide-for-large-up:
+                label: 'Hide for large and up'
+              hide-for-large-only:
+                label: 'Hide for large only'
+              hide-for-xlarge-up:
+                label: 'Hide for xlarge and up'
+              hide-for-xlarge-only:
+                label: 'Hide for xlarge only'
+              hide-for-xxlarge-up:
+                label: 'Hide for xxlarge and up'
+    classOrientationDetection:
+      type: string
+      ui:
+        label: 'Orientation detection'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibilityClasses'
+          position: 30
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              show-for-landscape:
+                label: 'Show for landscape'
+              show-for-portrait:
+                label: 'Show for portrait'
+    classTouchDetection:
+      type: string
+      ui:
+        label: 'Touch detection'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibilityClasses'
+          position: 40
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              show-for-touch:
+                label: 'Show for touch'
+              hide-for-touch:
+                label: 'Hide for touch'
+
+'M12.Foundation:AbstractSpacing':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        spacing:
+          label: 'Spacing'
+          position: 20
+          tab: view
+          collapsed: true
+  properties:
+    marginTop:
+      type: string
+      ui:
+        label: 'Top'
+        reloadIfChanged: TRUE
+        help:
+          message: |
+            Add extra space before the element. Example values:
+            * **10** (same as **10px**)
+            * **10px**
+            * **0.5rem**
+            * **2em**
+            * **3pt**
+            * **-10px**: when you would like to decrease the spacing.
+            Note that when unit is not provided, *px* is assumed.
+        inspector:
+          group: 'spacing'
+          position: 10
+          editorOptions:
+            placeholder: e.g. 10px
+            allowEmpty: TRUE
+      validation:
+        'TYPO3.Neos/Validation/RegularExpressionValidator':
+          regularExpression: /^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/
+    marginBottom:
+      type: string
+      ui:
+        label: 'Bottom'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'spacing'
+          position: 20
+          editorOptions:
+            placeholder: e.g. 10px
+            allowEmpty: TRUE
+      validation:
+        'TYPO3.Neos/Validation/RegularExpressionValidator':
+          regularExpression: /^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/
+    marginLeft:
+      type: string
+      ui:
+        label: 'Left'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'spacing'
+          position: 30
+          editorOptions:
+            placeholder: e.g. 10px
+            allowEmpty: TRUE
+      validation:
+        'TYPO3.Neos/Validation/RegularExpressionValidator':
+          regularExpression: /^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/
+    marginRight:
+      type: string
+      ui:
+        label: 'Right'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'spacing'
+          position: 40
+          editorOptions:
+            placeholder: e.g. 10px
+            allowEmpty: TRUE
+      validation:
+        'TYPO3.Neos/Validation/RegularExpressionValidator':
+          regularExpression: /^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/
+
+
+# -----------------------------------------------------------------------------
+#
+# Add M12.Foundation:GenericHelpers all properties to TYPO3.Neos:Content
+#
+# -----------------------------------------------------------------------------
+'TYPO3.Neos:Content':
+  superTypes:
+    'M12.Foundation:AbstractGenericHelpers': TRUE
+    'M12.Foundation:AbstractSpacing': TRUE
+    'M12.Foundation:AbstractDevBase': TRUE
+    'M12.Foundation:AbstractDevCustomLook': TRUE
+
+
+
+
+
+
+
+
+
+
+
+
+# Borrowed from https://raw.githubusercontent.com/million12/M12.Foundation/master/Configuration/NodeTypes.Abstracts.yaml
+
+#
+# Mixin to define node title used as a node reference name
+# Note: it is based on 'TYPO3.Neos:Node.label' definition
+# which takes the 'title' property as a displayed node label.
+#
+'M12.Foundation:AbstractNodeTitle':
+  abstract: TRUE
+  properties:
+    title:
+      type: string
+      ui:
+        label: 'Change name'
+        help:
+          message: |
+            Override content element's name, so it is easier to find it in the _Structure Tree_ panel.
+
+            Setting this field can be also useful if you reference to it (e.g. from _Content references_ element) or search for it.
+        inspector:
+          group: 'type'
+          position: 200
+
+#
+# Mixin with custom id / css class / inline css
+#
+'M12.Foundation:AbstractDevBase':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        dev:
+          label: 'Advanced CSS settings'
+          position: 40
+          tab: dev
+        devCode:
+          label: 'Custom code'
+          position: 50
+          tab: dev
+  properties:
+    customCssClass:
+      type: string
+      ui:
+        label: 'Element custom CSS class name(s)'
+        help:
+          message: |
+            When set, this value will be added to the element's `class` attribute in the HTML code.
+
+            Note: multiple classes must be **space-separated**.
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'dev'
+          position: 10
+          editorOptions:
+            placeholder: 'None'
+      validation:
+        regularExpression:
+          regularExpression: '/^[-a-z0-9_ ]+$/i'
+    customHtmlId:
+      type: string
+      ui:
+        label: 'Element custom HTML ID'
+        help:
+          message: "If provided, this value will be set as the element's `id` attribute in the HTML code."
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'dev'
+          position: 11
+          editorOptions:
+            placeholder: 'None'
+      validation:
+        regularExpression:
+          regularExpression: '/^[-a-z0-9_]+$/i'
+    customCssCode:
+      type: string
+      ui:
+        label: 'Element inline CSS'
+        help:
+          message: "Add any necessary CSS styling for the element. The value will be set for the element's `style` attribute in the HTML code."
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'devCode'
+          position: 30
+          editorOptions:
+            placeholder: 'e.g. margin-top: 3rem'
+    customUserAttributes:
+      type: string
+      ui:
+        label: 'Element extra HTML attributes'
+        help:
+          message: |
+            Add any custom HTML attributes to the element.
+            One per line.
+
+            ##### Example
+            ```
+            data-something=value
+            data-options={"foo":"bar"}
+            tabindex=0
+            ```
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'devCode'
+          position: 40
+          editor: Content/Inspector/Editors/TextAreaEditor
+          editorOptions:
+            placeholder: 'e.g. custom-data-attribute=value'
+
+
+'M12.Foundation:AbstractRadiusRoundedStyle':
+  abstract: TRUE
+  properties:
+    classRadiusAndRounded:
+      type: string
+      ui:
+        label: 'Radius or rounded style'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'utilityClasses'
+          position: 50
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'No'
+            allowEmpty: TRUE
+            values:
+              radius:
+                label: 'Radius'
+              round:
+                label: 'Rounded'
+
+
+# Similar to 'M12.Foundation:AbstractRadiusRoundedStyle', but with Radius only
+# Appliable to element where 'rounded' style is not applicable.
+'M12.Foundation:AbstractRadiusStyle':
+  abstract: TRUE
+  properties:
+    classRadiusAndRounded:
+      type: string
+      ui:
+        label: 'Radius style'
+        help:
+          message: "Select to have slightly rounded corners for this element."
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'utilityClasses'
+          position: 50
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'No'
+            allowEmpty: TRUE
+            values:
+              radius:
+                label: 'Radius'
+
+'M12.Foundation:AbstractDevCustomLook':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        devView:
+          position: 10
+          tab: view
+          label: 'Custom look'
+          collapsed: true
+  properties:
+    customLook:
+      type: array
+      ui:
+        label: 'Style / look'
+        help:
+          message: |
+            Change look/style of certain elements.
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'devView'
+          position: 40
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            values:
+              text-small:
+                label: 'text: small'
+              text-xsmall:
+                label: 'text: xsmall'
+              text-xxsmall:
+                label: 'text: xxsmall'
+              text-color-white:
+                label: 'text: white'
+
+#
+# Mixin:
+# Semantic markup, choosing tag name for wrapper element
+#
+'M12.Foundation:AbstractDevCustomTag':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        devSemantic:
+          label: 'Semantic Web'
+          position: 70
+          tab: dev
+          collapsed: true
+  properties:
+    customTagName:
+      type: string
+      ui:
+        label: 'Element semantic tag type'
+        help:
+          message: "If you peculiar about HTML markup and its semanticity, you can set here the wrapping tag for the element. Otherwise the default will be `div`."
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'devSemantic'
+          position: 50
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Default / None'
+            allowEmpty: TRUE
+            values:
+              main:
+                label: 'MAIN'
+              header:
+                label: 'HEADER'
+              nav:
+                label: 'NAV'
+              section:
+                label: 'SECTION'
+              artile:
+                label: 'ARTICLE'
+              aside:
+                label: 'ASIDE'
+              footer:
+                label: 'FOOTER'
+
+#
+# Mixin to be added to content nodes to render anchors
+# <a id"sectionId"></a> before a content node
+#
+'M12.Foundation:AbstractSectionId':
+  abstract: TRUE
+  properties:
+    sectionId:
+      type: string
+      ui:
+        label: 'Section ID'
+        help:
+          message: |
+            _Section ID_ is a marker printed in the HTML code. It does **not** have any visual effect on the page, it's just an empty tag rendered as:
+            `<a name="section-id-here"></a>`
+
+            When to use? Couple of cases, most common are listed below.
+
+            1. **Reference to it from URL address**
+            Let's say you have set _Section ID_ with value `mySectionX` for some element on a very long page. Now you want the visitor to visit directly that part of the page. To do that, add `#mySectionX` to URL address. The visitor will be scrolled to that element with _Section ID_ set.
+            Hint: you can set it using _URL #fragment ID_ page setting.
+
+            2. **Use with Magellan Sticky Menu**
+            See help message for _Section in Magellan Sticky Menu_ checkbox below (available only for some content elements).
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'devCode'
+          position: 5
+          editorOptions:
+            placeholder: 'None'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          minimum: 1
+          maximum: 64
+        regularExpression:
+          regularExpression: '/^[a-z0-9\-]+$/i'
+
+
+#
+# Mixin for content elements which can support section id and magellan menu
+# Apply for **non-navigation** node types.
+# For navigation elements apply just AbstractSectionId (+ AbstractNavBehavior if applicable)
+#
+'M12.Foundation:AbstractSectionIdMagellan':
+  abstract: TRUE
+  superTypes:
+    'M12.Foundation:AbstractSectionId': TRUE
+  ui:
+    inspector:
+      groups:
+        navOptions:
+          label: 'Navigational options'
+          position: 96
+          tab: meta
+  properties:
+    sectionId:
+      ui:
+        inspector:
+          group: 'navOptions'
+          position: 10
+    magellanSupport:
+      type: boolean
+      ui:
+        label: 'Section in Magellan Sticky Menu'
+        help:
+          message: |
+            _Magellan Sticky Menu_ is especially useful on a long pages with lots of content. It's a fixed-position navigation which helps users **keep track of where they are on a page without scrolling** (see demo [here](http://foundation.zurb.com/docs/components/magellan.html)). The menu will stay fixed at the top of the page as users scroll and the current sections of the page will be highlighted in the menu.
+
+            ##### How to set up Magellan Sticky Menu
+
+            1. Add a menu element to your page:
+                * We recommend to use one of _Top Bar_, _Sub Nav_ or _Side Nav_ menu.
+                * Set _Menu behavior_ set to _Magellan Sticky Menu_.
+            2. Fill a single page with lots of content.
+            3. Identify elements on the page which are your sections and fill _Section ID_ for them. Tick the _Section in Magellan Sticky Menu_ checkox as well.
+            4. Add needed menu items for these sections. The menu is built automatically from the page structure so you need to build that structure:
+                * Add a new page, choose _Shortcut_ type on the dialog screen.
+                * Set _Target mode_ to _Selected target_
+                * Set the _Target_ to the prepared page.
+                * Set _URL #fragment ID_ to match the _Section ID_ on the related content element.
+
+            Done! Now when you scroll to the section on the page, a corresponsing menu item should be highlighted.
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'navOptions'
+          position: 20
+
+
+#
+# Mixin for nav content elements, to add support for fixed/sticky/magellan
+#
+'M12.Foundation:AbstractNavBehavior':
+  abstract: TRUE
+  properties:
+    navBehavior:
+      type: 'string'
+      ui:
+        label: 'Menu behavior (e.g. sticky)'
+        help:
+          message: |
+            Choose menu behavior.
+
+            ##### Fixed position menu
+            Set this option to make the menu stay fixed at the top of the page as you scroll.
+
+            ##### Sticky menu
+            Works similar to _Fixed position menu_ option, with the difference that you can put it anywhere on the site. When the menu reach the top visible area of the browser, it will act like the fixed menu and stick to the top area as users continue to scroll.
+
+            ##### Magellan Sticky Menu
+            This fixed-position navigation helps users **keep track of where they are on a page without scrolling**. See demo and technical details [here](http://foundation.zurb.com/docs/components/magellan.html).
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'options'
+          position: 10
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              fixed:
+                label: 'Fixed position menu'
+              sticky:
+                label: 'Sticky menu'
+              magellan:
+                label: 'Magellan Sticky Menu'
+
+
+#
+# Mixin: tooltip
+#
+'M12.Foundation:AbstractTitleTooltip':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        tooltip:
+          label: 'Tooltip'
+          position: 91 # after AbstractFontIcon
+          tab: view
+          collapsed: true
+  properties:
+    htmlTitle:
+      type: string
+      ui:
+        label: 'Tooltip text'
+        help:
+          message: |
+            Set the tooltip for this content element.
+
+            If used together with _Render as an enhanced tooltip_ option, the tooltip will be displayed as a nicer and enhanced tooltip. Otherwise default browser tooltip will be used.
+
+            **Developer info**: this option sets `title="<value>"` attribute of the element.
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'tooltip'
+          position: 10
+          editorOptions:
+            placeholder: 'Empty'
+    tooltip:
+      type: boolean
+      ui:
+        label: "Show as an enhanced tooltip"
+        help:
+          message: "When set, the tooltip will be displayed as a nicer, enhanced tooltip. Otherwise default browser tooltip will be used."
+        inspector:
+          group: 'tooltip'
+          position: 20
+    classTooltipPosition:
+      type: string
+      ui:
+        label: 'Tooltip position'
+        help:
+          message: "Specify position of displayed tooltip (only when used with _Render as an enhanced tooltip_ setting)."
+        inspector:
+          group: 'tooltip'
+          position: 30
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Default (Bottom)'
+            allowEmpty: TRUE
+            values:
+              tip-top:
+                label: 'Top'
+              tip-bottom:
+                label: 'Bottom'
+              tip-left:
+                label: 'Left'
+              tip-right:
+                label: 'Right'
+    tooltipOptions:
+      type: array
+      ui:
+        label: 'Tooltip options'
+        inspector:
+          group: 'tooltip'
+          position: 40
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Tooltip options'
+            values:
+              'disable_for_touch:true':
+                label: 'Disable for touch'
+              'show_on:small':
+                label: 'Show on small device only'
+              'show_on:medium':
+                label: 'Show on: medium device only'
+              'show_on:large':
+                label: 'Show on: large device only'
+
+
+
+#
+# Background image and properties
+#
+'M12.Foundation:AbstractBackgroundImage':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        background:
+          label: 'Background image'
+          position: 80 # before FontIcon
+          tab: view
+          collapsed: true
+  properties:
+    backgroundImageExternal:
+      type: string
+      ui:
+        label: 'External image URL'
+        help:
+          message: |
+            If you want to use external image without uploading it to media library,
+            use this option. Place here link in format prefixed with *https://*, e.g. *https://source.unsplash.com/KR2mdHJ5qMg/1600x900*.
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'background'
+          position: 10
+          editor: Content/Inspector/Editors/LinkEditor
+          editorOptions:
+            assets: FALSE
+            placeholder: 'e.g. https://placehold.it/1600x900'
+    backgroundImage:
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Image from Media library'
+        reloadIfChanged: TRUE
+        help:
+          message: |
+            Use image from Media library to add background image to the element.
+            Use extra options below (size, position, repeat) it tune your image.
+        inspector:
+          group: background
+          position: 12
+    backgroundSize:
+      type: string
+      ui:
+        label: 'Background size'
+        reloadIfChanged: TRUE
+        help:
+          message: |
+            Set size of the background. Some special options include:
+            * *contain*: scales the image as large as possible and maintains its aspect ratio
+              (image doesn't get squished). Image is **letterboxed** within the container.
+            * *cover*: inverse of *contain*. Scales the image as large as possible and maintains
+              its aspect ratio. The image "covers" the entire width or height of the container.
+        inspector:
+          group: 'background'
+          position: 20
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'cover'
+            allowEmpty: TRUE
+            values:
+              'cover':
+                label: 'cover'
+              'contain':
+                label: 'contain'
+              '50%':
+                label: '50%'
+              'initial':
+                label: 'initial'
+              'auto':
+                label: 'auto'
+    backgroundPosition:
+      type: string
+      ui:
+        label: 'Background position'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'background'
+          position: 30
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'center'
+            allowEmpty: TRUE
+            values:
+              'center':
+                label: 'center'
+              'top':
+                label: 'top'
+              'bottom':
+                label: 'bottom'
+              'left':
+                label: 'left'
+              'top left':
+                label: 'top left'
+              'bottom left':
+                label: 'bottom left'
+              'right':
+                label: 'right'
+              'top right':
+                label: 'top right'
+              'bottom right':
+                label: 'bottom right'
+    backgroundRepeat:
+      type: string
+      ui:
+        label: 'Background repeat'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'background'
+          position: 40
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'no-repeat'
+            allowEmpty: TRUE
+            values:
+              'no-repeat':
+                label: 'no-repeat'
+              'repeat':
+                label: 'repeat'
+              'repeat-x':
+                label: 'repeat on X axis'
+              'repeat-y':
+                label: 'repeat on Y axis'
