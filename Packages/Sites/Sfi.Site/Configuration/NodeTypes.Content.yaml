@@ -2,6 +2,7 @@
   properties:
     variant:
       type: string
+      defaultValue: 'Paragraph'
       ui:
         label: 'Вариант'
         reloadIfChanged: TRUE
@@ -9,7 +10,6 @@
           group: 'base'
           editor: Content/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            defaultValue: 'Paragraph'
             allowEmpty: TRUE
             values:
               Paragraph:
