@@ -17,3 +17,15 @@
 		background-color: darken($color-primaryAlt, 10%);
 	}
 }
+
+.ButtonTransparent {
+	display: inline-block;
+	transition: $transition;
+	border: 3px solid white;
+	padding: $u/2 $u;
+	color: white;
+
+	&:hover {
+		background-color: darken($color-primaryAlt, 10%);
+	}
+}

@@ -95,3 +95,83 @@
         inlineEditable: true
         aloha:
           placeholder: 'Название'
+
+'Sfi.Site:ArticleLink':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: 'Внешний материал'
+  properties:
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Заголовок'
+    teaser:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Тизер'
+    link:
+      type: string
+      ui:
+        label: 'Ссылка'
+        inspector:
+          group: base
+          editor: 'TYPO3.Neos/Inspector/Editors/LinkEditor'
+    image:
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Фотка'
+        reloadIfChanged: TRUE
+        inspector:
+          group: base
+          editorOptions:
+            features:
+              resize: TRUE
+            crop:
+              aspectRatio:
+                enableOriginal: FALSE
+                allowCustom: FALSE
+                locked:
+                  width: 600
+                  height: 400
+
+
+'Sfi.Site:PersonCard':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: 'Человек с кружочком'
+  properties:
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Имя'
+    info:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Инфо'
+    image:
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Фотка'
+        reloadIfChanged: TRUE
+        inspector:
+          group: base
+          editorOptions:
+            features:
+              resize: TRUE
+            crop:
+              aspectRatio:
+                enableOriginal: FALSE
+                allowCustom: FALSE
+                locked:
+                  width: 140
+                  height: 140

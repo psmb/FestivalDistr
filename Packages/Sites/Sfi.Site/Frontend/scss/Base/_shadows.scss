@@ -1,0 +1,11 @@
+$shadow: 1px 1px 2px 0 $gray-light;
+$shadow-deep: 3px 3px 4px 0 $gray-light;
+
+.shadow {
+	box-shadow: $shadow;
+}
+
+.shadow-hover:hover {
+	transition: box-shadow 400ms ease;;
+	box-shadow: $shadow-deep;
+}

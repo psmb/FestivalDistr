@@ -79,6 +79,8 @@ blah: &alohaPlain
   childNodes:
     main:
       type: 'TYPO3.Neos:ContentCollection'
+    articles:
+      type: 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Страница площадки'
   properties:

@@ -1,0 +1,10 @@
+prototype(S:ArticleLink) {
+	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/ArticleLink.html'
+  @process.convertUris = TYPO3.Neos:ConvertUris
+	imageUri = ImageUri {
+		asset = ${q(node).property('image')}
+		maximumWidth = 600
+		maximumHeight = 400
+		allowCropping = TRUE
+	}
+}

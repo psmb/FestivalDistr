@@ -4,15 +4,22 @@
 	<div class="fixedWidth">
 		<div class="row">
 			<div class="small-12 medium-8 columns">
-				<div style="position: relative; top: -112px" class="backgroundColor-white padding-double margin-single">
+				<div style="position: relative; top: -112px" class="backgroundColor-white shadow padding-double margin-single">
 					<!-- TODO: i18n -->
 					<p class="Woody marginBottom-half">Фестивальная площадка <span class="color-primaryAlt">«{title}»</span></p>
 					<h1 class="H1 marginBottom-single">{neos:contentElement.editable(property: 'fullTitle', tag: 'span')}</h1>
 					{main -> f:format.raw()}
 				</div>
+				<f:if condition="{showArticles}">
+					<div class="marginHorizontal-single paddingTop-triple" style="position: relative; top: -112px">
+						<!-- TODO: i18n -->
+						<h3 class="Lead textAlign-center marginBottom-triple color-gray">Материалы по теме</h3>
+						{articles -> f:format.raw()}
+					</div>
+				</f:if>
 			</div>
 			<div class="small-12 medium-4 columns">
-				<div style="position: relative; top: -112px" class="backgroundColor-white padding-double margin-single">
+				<div style="position: relative; top: -112px" class="backgroundColor-white shadow padding-double margin-single">
 					<!-- TODO: i18n -->
 					<p class="Squirrel marginBottom-sesquialteral">Другие площадки фестиваля:</p>
 					{venuesMenu -> f:format.raw()}

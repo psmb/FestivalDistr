@@ -1,7 +1,8 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <header class="Header fixedWidth">
 	<div class="paddingVertical-single">
-		<a href="http://psmb.ru" title="{f:translate(package:'Sfi.Site', id:'global.tomain')}">
+		<!-- TODO: i18n -->
+		<a target="_blank" href="http://psmb.ru" title="На сайт Преображенского братства">
 			<img width="300px" src="{f:uri.resource(path: 'images/PsmbFish.svg', package: 'Sfi.Site')}" alt="Преображенское братство">
 		</a>
 	</div>
@@ -18,7 +19,10 @@
 					<f:then>
 						<div class="Masthead-summary Fox color-white paddingVertical-single">{neos:contentElement.editable(property: 'summary')}</div>
 					</f:then>
-					<f:else><div style="height: 112px;"></div></f:else>
+					<f:else>
+						<a class="ButtonTransparent Dog" title="На главную страницу сайта фестиваля" href="/">На главную</a>
+						<div style="height: 112px;"></div>
+					</f:else>
 				</f:if>
 			</div>
 		</div>
