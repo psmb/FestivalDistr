@@ -28,4 +28,6 @@
 		</div>
 	</div>
 </neos:link.node>
-<nav class="show-for-small-only fixedWidth">{mainMenu -> f:format.raw()}</nav>
+<f:if condition="{isMain}">
+	<nav class="show-for-small-only fixedWidth">{mainMenu -> f:format.raw()}</nav>
+</f:if>
