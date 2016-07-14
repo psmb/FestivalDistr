@@ -3,7 +3,7 @@
 <div class="medium-7 PersonCard marginVertical-double">
 	<div class="display-flex">
 		<f:if condition="{imageUri}">
-			<img class="PersonCard-image circle" src="{imageUri}" alt={title} />
+			<img style="height: 100%" class="PersonCard-image circle" src="{imageUri}" alt={title} />
 		</f:if>
 		<div class="paddingTop-single paddingHorizontal-double">
 			<h3 class="Dog">{neos:contentElement.editable(property: 'title', tag: 'span')}</h3>
