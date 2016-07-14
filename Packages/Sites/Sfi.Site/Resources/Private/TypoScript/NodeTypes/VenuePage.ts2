@@ -8,6 +8,6 @@ prototype(S:VenuePage) {
 		attributes.class = 'row small-up-1 medium-up-2 large-up-3'
 	}
 	# Dirty hack
-	showArticles = ${q(node).children('articles').children().count() > 0 ? true : false}
+	showArticles = ${documentNode.context.inBackend || q(node).children('articles').children().count() > 0 ? true : false}
 	venuesMenu = S:VenuesMenu
 }
