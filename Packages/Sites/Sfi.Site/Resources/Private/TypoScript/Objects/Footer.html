@@ -1,5 +1,10 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 
-<footer class="Footer">
-
+<div class="fixedWidth">
+	{mainMenu -> f:format.raw()}
+</div>
+<footer class="Footer backgroundColor-primaryAlt paddingVertical-double">
+	<div class="fixedWidth">
+		<p class="Squirrel color-white">© 2016 Преображенское содружество малых православных братств</p>
+	</div>
 </footer>

@@ -1,0 +1,8 @@
+.js-stickInParent {
+	top: 2*$u;
+
+	&.isFixed {
+		position: fixed;
+		top: 2*$u;
+	}
+}

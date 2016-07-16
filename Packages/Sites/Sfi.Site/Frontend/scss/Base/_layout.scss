@@ -16,8 +16,12 @@
 .fixedWidth {
 	margin: 0 auto;
 	max-width: 1170px;
-	padding-left: $u;
-	padding-right: $u;
+	padding-left: $u/2;
+	padding-right: $u/2;
+	@include breakpoint(medium up) {
+		padding-left: $u;
+		padding-right: $u;
+	}
 }
 
 .fullWidth {

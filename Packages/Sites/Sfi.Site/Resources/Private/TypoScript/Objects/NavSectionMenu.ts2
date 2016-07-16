@@ -1,10 +1,10 @@
 prototype(S:NavSectionMenu) < prototype(T:Collection) {
 	# TODO: i18n
-	@process.tmpl = ${'<ul class="NavSectionMenu">' + value + '<li class="NavSectionMenu-item Button Button--alt Dog"><a href="http://psmb.ru/o-nas/">О Братстве</a></li></ul>'}
+	@process.tmpl = ${'<div class="NavSectionMenu">' + value + '<li class="NavSectionMenu-item Button Button--alt Dog"><a href="http://psmb.ru/o-nas/">О Братстве</a></li></div>'}
 	collection = ${q(site).children('main').find('[instanceof Sfi.Site:NavSection]').get()}
 	itemRenderer = T:Tag {
-		@process.tmpl = ${'<li class="NavSectionMenu-item Button Dog">' + value + '</li>'}
 		tagName = 'a'
+		attributes.class = 'NavSectionMenu-item Button Dog'
 		attributes.title = ${node.properties.title}
 		attributes.href = NodeUri {
 			node = ${site}
