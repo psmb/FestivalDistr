@@ -3,8 +3,8 @@
 <div class="backgroundColor-gray">
 	<div class="fixedWidth">
 		<div class="row">
-			<div class="small-12 medium-8 columns">
-				<div style="position: relative; top: -112px" class="backgroundColor-white shadow padding-double margin-single">
+			<div class="small-12 large-8 columns">
+				<div style="position: relative; top: -112px" class="backgroundColor-white shadow padding-double">
 					<!-- TODO: i18n -->
 					<p class="Woody marginBottom-half">Фестивальная площадка <span class="color-primaryAlt">«{title}»</span></p>
 					<h1 class="H1 marginBottom-single">{neos:contentElement.editable(property: 'fullTitle', tag: 'span')}</h1>
@@ -18,11 +18,13 @@
 					</div>
 				</f:if>
 			</div>
-			<div class="small-12 medium-4 columns">
-				<div style="position: relative; top: -112px" class="backgroundColor-white shadow padding-double margin-single">
-					<!-- TODO: i18n -->
-					<p class="Squirrel marginBottom-sesquialteral">Другие площадки фестиваля:</p>
-					{venuesMenu -> f:format.raw()}
+			<div class="small-12 large-4 columns">
+				<div style="position: relative; top: -136px">
+					<div class="NavSectionMenu-wrap backgroundColor-white shadow padding-double js-stickInParent">
+						<!-- TODO: i18n -->
+						<p class="Squirrel marginBottom-sesquialteral">Другие площадки фестиваля:</p>
+						{venuesMenu -> f:format.raw()}
+					</div>
 				</div>
 			</div>
 		</div>
