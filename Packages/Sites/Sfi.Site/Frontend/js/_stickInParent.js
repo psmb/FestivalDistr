@@ -1,20 +1,24 @@
 function stickInParent (selector) {
-	var fixedClass = 'isFixed';
-	selector = selector || '.js-stickInParent';
-
-	this.nav = document.querySelector(selector);
-	if (!this.nav) {
-		return;
-	}
-	this.parent = this.nav.parentElement;
-	this.update = function (scrollPosition) {
-		if (scrollPosition > this.parent.offsetTop) {
-			this.nav.classList.add(fixedClass);
-		} else {
-			this.nav.classList.remove(fixedClass);
+	var update = (function (selector) {
+		var fixedClass = 'isFixed';
+		selector = selector || '.js-stickInParent';
+		var nav = document.querySelector(selector);
+		if (!nav) {
+			return null;
 		}
-	};
-	debouncedScroll(this.update.bind(this));
+		var parent = nav.parentElement;
+
+		return function (scrollPosition) {
+			if (scrollPosition > parent.offsetTop) {
+				nav.classList.add(fixedClass);
+			} else {
+				nav.classList.remove(fixedClass);
+			}
+		};
+	})(selector);
+	if (update) {
+		debouncedScroll(update);
+	}
 }
 
 function debouncedScroll(callback) {
