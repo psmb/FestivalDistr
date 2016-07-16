@@ -27,7 +27,7 @@ prototype(S:Page) < prototype(Page) {
 			tagName = 'link'
 			attributes {
 				href = T:ResourceUri {
-					path = 'resource://Sfi.Site/Public/built/index.css'
+					path = 'resource://Sfi.Site/Public/built/index.css?1'
 				}
 				type = 'text/css'
 				rel = 'stylesheet'
@@ -44,7 +44,7 @@ prototype(S:Page) < prototype(Page) {
 		javascripts.index = T:Tag {
 			tagName = 'script'
 			attributes.src = T:ResourceUri {
-				path = 'resource://Sfi.Site/Public/built/index.js'
+				path = 'resource://Sfi.Site/Public/built/index.js?1'
 			}
 		}
 	}
