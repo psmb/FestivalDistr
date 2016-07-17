@@ -114,6 +114,12 @@
         inlineEditable: true
         aloha:
           placeholder: 'Тизер'
+    source:
+      type: string
+      ui:
+        label: 'Источник материала'
+        inspector:
+          group: base
     link:
       type: string
       ui:

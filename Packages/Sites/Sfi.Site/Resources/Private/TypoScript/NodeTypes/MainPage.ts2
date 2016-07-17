@@ -4,4 +4,13 @@ prototype(S:MainPage) < prototype(T:Array) {
 	main = TYPO3.Neos:ContentCollection {
 		nodePath = 'main'
 	}
+	articles = T:Array {
+		@process.tmpl = ${'<div class="paddingVertical-triple fixedWidth">' + value + '</div>'}
+		title = '<h3 class="Lead textAlign-center marginBottom-triple color-gray">Материалы фестиваля 2015 года</h3>'
+		content = TYPO3.Neos:ContentCollection {
+			nodePath = 'articles'
+			attributes.class = 'row small-up-1 medium-up-2 large-up-3'
+		}
+		@if.showArticles = ${documentNode.context.inBackend || q(node).children('articles').children().count() > 0 ? true : false}
+	}
 }

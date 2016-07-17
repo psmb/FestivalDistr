@@ -32,6 +32,8 @@ blah: &alohaPlain
       type: 'TYPO3.Neos:ContentCollection'
     gallery:
       type: 'TYPO3.Neos:ContentCollection'
+    articles:
+      type: 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Главная страница'
   properties:
