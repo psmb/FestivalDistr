@@ -49,5 +49,8 @@ prototype(S:Page) < prototype(Page) {
 				@process.burst = ${value + '?1'}
 			}
 		}
+		javascripts.analytics = T:Template {
+			templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Analytics.html'
+		}
 
 }
