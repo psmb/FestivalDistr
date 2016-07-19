@@ -10,4 +10,10 @@ prototype(S:VenuesMenu) < prototype(T:Collection) {
 		}
 		content = ${node.properties.title}
 	}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'DescendantOf_' + site.identifier}
+		}
+	}
 }
