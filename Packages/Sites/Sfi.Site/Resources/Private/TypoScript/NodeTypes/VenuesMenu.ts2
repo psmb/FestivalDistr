@@ -12,8 +12,11 @@ prototype(S:VenuesMenu) < prototype(T:Collection) {
 	}
 	@cache {
 		mode = 'cached'
+		entryIdentifier {
+			node = ${node.identifier}
+		}
 		entryTags {
-			1 = ${'DescendantOf_' + site.identifier}
+			1 = ${'NodeType_TYPO3.Neos:Document'}
 		}
 	}
 }

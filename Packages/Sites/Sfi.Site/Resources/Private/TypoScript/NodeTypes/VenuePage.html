@@ -10,13 +10,7 @@
 					<h1 class="H1 marginBottom-single">{neos:contentElement.editable(property: 'fullTitle', tag: 'span')}</h1>
 					{main -> f:format.raw()}
 				</div>
-				<f:if condition="{showArticles}">
-					<div class="marginHorizontal-single paddingTop-triple" style="position: relative; top: -112px">
-						<!-- TODO: i18n -->
-						<h3 class="Lead textAlign-center marginBottom-triple color-gray">Материалы по теме</h3>
-						{articles -> f:format.raw()}
-					</div>
-				</f:if>
+				{articles -> f:format.raw()}
 			</div>
 			<div class="small-12 large-4 columns">
 				<div style="position: relative; top: -136px">

@@ -12,4 +12,10 @@ prototype(S:NavSectionMenu) < prototype(T:Collection) {
 		}
 		content = ${node.properties.title}
 	}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'NodeType_TYPO3.Neos:Document'}
+		}
+	}
 }
