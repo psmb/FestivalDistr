@@ -9,7 +9,7 @@ function stickInParent (selector) {
 		var parent = nav.parentElement;
 
 		return function (scrollPosition) {
-			if (scrollPosition > parent.offsetTop) {
+			if (scrollPosition > parent.offsetTop && window.innerHeight > nav.offsetHeight) {
 				nav.classList.add(fixedClass);
 			} else {
 				nav.classList.remove(fixedClass);
