@@ -15,7 +15,7 @@ prototype(S:NavSectionMenu) < prototype(T:Collection) {
 	@cache {
 		mode = 'cached'
 		entryTags {
-			1 = ${'NodeType_TYPO3.Neos:Document'}
+			1 = ${'NodeType_Sfi.Site:NavSection'}
 		}
 	}
 }
