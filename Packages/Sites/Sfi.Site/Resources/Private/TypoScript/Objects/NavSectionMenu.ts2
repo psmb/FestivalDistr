@@ -14,6 +14,9 @@ prototype(S:NavSectionMenu) < prototype(T:Array) {
 		}
 		@cache {
 			mode = 'cached'
+			entryIdentifier {
+				node = ${node}
+			}
 			entryTags {
 				1 = ${'NodeType_Sfi.Site:NavSection'}
 			}
