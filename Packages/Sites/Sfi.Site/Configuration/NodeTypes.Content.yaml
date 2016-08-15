@@ -95,6 +95,8 @@
         inlineEditable: true
         aloha:
           placeholder: 'Название'
+          link:
+            a: true
 
 'Sfi.Site:ArticleLink':
   superTypes:
