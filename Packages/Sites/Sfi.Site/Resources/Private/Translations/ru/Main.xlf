@@ -5,6 +5,9 @@
             <trans-unit id="global.psmb">
                 <source>Преображенское братство</source>
             </trans-unit>
+            <trans-unit id="global.copyright">
+                <source>© 2016 Преображенское содружество малых православных братств</source>
+            </trans-unit>
             <trans-unit id="global.shorttitle">
                 <source>Фестиваль «Преображенские встречи»</source>
             </trans-unit>

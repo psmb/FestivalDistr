@@ -6,6 +6,10 @@
                 <source>Преображенское братство</source>
                 <target></target>
             </trans-unit>
+						<trans-unit id="global.copyright">
+								<source>© 2016 Преображенское содружество малых православных братств</source>
+								<target>© 2016 The Transfiguration Brotherhood</target>
+						</trans-unit>
             <trans-unit id="global.shorttitle">
                 <source>Фестиваль «Преображенские встречи»</source>
 								<target>The Transfiguration Brotherhood</target>
