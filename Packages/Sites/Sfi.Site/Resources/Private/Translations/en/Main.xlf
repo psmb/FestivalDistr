@@ -23,8 +23,8 @@
 								<target>Related articles</target>
             </trans-unit>
             <trans-unit id="articlelink.titleMain">
-                <source>Articles from the 2015 Festival</source>
-								<target></target>
+                <source>Материалы фестиваля 2015 года</source>
+								<target>Articles from the 2015 Festival</target>
             </trans-unit>
         </body>
     </file>
