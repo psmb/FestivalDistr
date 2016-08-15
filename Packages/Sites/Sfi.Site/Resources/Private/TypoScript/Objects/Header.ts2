@@ -2,6 +2,7 @@ prototype(S:Header) < prototype(T:Template) {
 	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Header.html'
 	mainMenu = S:NavSectionMenu
 
+	lang = ${Array.first(node.context.dimensions.language)}
 	headline = ${q(site).property('headline')}
 	subHeadline = ${q(site).property('subHeadline')}
 	location = ${q(site).property('location')}

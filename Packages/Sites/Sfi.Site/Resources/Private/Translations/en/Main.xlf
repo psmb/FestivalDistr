@@ -4,21 +4,27 @@
         <body>
             <trans-unit id="global.psmb">
                 <source>Преображенское братство</source>
+                <target></target>
             </trans-unit>
             <trans-unit id="global.shorttitle">
                 <source>Фестиваль «Преображенские встречи»</source>
+								<target>The Transfiguration Brotherhood</target>
             </trans-unit>
             <trans-unit id="global.tomain">
                 <source>На главную</source>
+								<target>Go to the front page</target>
             </trans-unit>
             <trans-unit id="global.topsmb">
                 <source>На сайт Преображенского братства</source>
+								<target>Go to the website of the Transfiguration Brotherhood</target>
             </trans-unit>
             <trans-unit id="articlelink.title">
                 <source>Материалы по теме</source>
+								<target>Related articles</target>
             </trans-unit>
             <trans-unit id="articlelink.titleMain">
-                <source>Материалы фестиваля 2015 года</source>
+                <source>Articles from the 2015 Festival</source>
+								<target></target>
             </trans-unit>
         </body>
     </file>

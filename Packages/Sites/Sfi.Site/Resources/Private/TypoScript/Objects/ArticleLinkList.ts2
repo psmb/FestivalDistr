@@ -1,7 +1,6 @@
 prototype(S:ArticleLinkList) < prototype(T:Collection) {
-	# TODO: i18n
 	@process.tmpl = ${'<div class="marginHorizontal-single paddingTop-triple" style="position: relative; top: -112px">
-		<h3 class="Lead textAlign-center marginBottom-triple color-gray">Материалы по теме</h3>
+		<h3 class="Lead textAlign-center marginBottom-triple color-gray"> ' + Translation.translate('articlelink.title', null, [], null, 'Sfi.Site') + '</h3>
 		<div class="row small-up-1 medium-up-2 large-up-3">' + value + '</div>
 	</div>'}
 	articles = ${q(node).children('articles').children()}

@@ -1,21 +1,35 @@
-prototype(S:NavSectionMenu) < prototype(T:Collection) {
-	# TODO: i18n
-	@process.tmpl = ${'<div class="NavSectionMenu">' + value + '<li class="NavSectionMenu-item Button Button--alt Dog"><a href="http://psmb.ru/o-nas/">О Братстве</a></li></div>'}
-	collection = ${q(site).children('main').find('[instanceof Sfi.Site:NavSection]').get()}
-	itemRenderer = T:Tag {
+prototype(S:NavSectionMenu) < prototype(T:Array) {
+	@process.tmpl = ${'<div class="NavSectionMenu">' + value + '</div>'}
+	list = T:Collection {
+		collection = ${q(site).children('main').find('[instanceof Sfi.Site:NavSection]').get()}
+		itemRenderer = T:Tag {
+			tagName = 'a'
+			attributes.class = 'NavSectionMenu-item Button Dog'
+			attributes.title = ${node.properties.title}
+			attributes.href = NodeUri {
+				node = ${site}
+				@process.addAnchor = ${value + '#' + node.properties.navTitle}
+			}
+			content = ${node.properties.title}
+		}
+		@cache {
+			mode = 'cached'
+			entryTags {
+				1 = ${'NodeType_Sfi.Site:NavSection'}
+			}
+		}
+	}
+
+	langLink = T:Tag {
+		@context.targetLang = ${Array.first(node.context.dimensions.language) == 'ru' ? 'en' : 'ru'}
 		tagName = 'a'
-		attributes.class = 'NavSectionMenu-item Button Dog'
+		attributes.class = 'NavSectionMenu-item Button Button--alt Dog'
 		attributes.title = ${node.properties.title}
 		attributes.href = NodeUri {
-			node = ${site}
-			@process.addAnchor = ${value + '#' + node.properties.navTitle}
+			node = ${q(documentNode).context({targetDimensions: {language: targetLang}, dimensions: {language: [targetLang]}}).count() > 0 ?
+			q(documentNode).context({targetDimensions: {language: targetLang}, dimensions: {language: [targetLang]}}).get(0) :
+			q(site).context({targetDimensions: {language: targetLang}, dimensions: {language: [targetLang]}}).get(0)}
 		}
-		content = ${node.properties.title}
-	}
-	@cache {
-		mode = 'cached'
-		entryTags {
-			1 = ${'NodeType_Sfi.Site:NavSection'}
-		}
+		content = ${targetLang == 'en' ? 'English' : 'Русский'}
 	}
 }
