@@ -27,7 +27,7 @@ prototype(S:NavSectionMenu) < prototype(T:Array) {
 		@context.targetLang = ${Array.first(node.context.dimensions.language) == 'ru' ? 'en' : 'ru'}
 		tagName = 'a'
 		attributes.class = 'NavSectionMenu-item Button Button--alt Dog'
-		attributes.title = ${node.properties.title}
+		attributes.title = ${targetLang == 'en' ? 'English Version' : 'Русская версия сайта'}
 		attributes.href = NodeUri {
 			node = ${q(documentNode).context({targetDimensions: {language: targetLang}, dimensions: {language: [targetLang]}}).count() > 0 ?
 			q(documentNode).context({targetDimensions: {language: targetLang}, dimensions: {language: [targetLang]}}).get(0) :
