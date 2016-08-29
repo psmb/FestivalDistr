@@ -36,10 +36,7 @@
 }
 
 .Lead {
-	font-size: rem-calc(26);
-	@include breakpoint(medium up) {
-		font-size: rem-calc(34);
-	}
+	font-size: rem-calc(24);
 	font-weight: 300;
 	line-height: $lineHeight-tight;
 }
