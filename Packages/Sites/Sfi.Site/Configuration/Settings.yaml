@@ -2,6 +2,8 @@ TYPO3:
   Flow:
     i18n:
       defaultLocale: 'ru'
+    http:
+      baseUri: 'https://festival.psmb.ru/'
   Neos:
     typoScript:
       autoInclude:
