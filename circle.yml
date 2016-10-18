@@ -20,5 +20,5 @@ deployment:
     commands:
       - cd ~/ansible-deploy
       - touch 'i'
-      - ansible-playbook ~/ansible-deploy/deploy.yml --extra-vars "REPOSITORY_URL=XXXX DOMAIN=XXXX HOST=server.psmb.ru PORT=XXXX" -i 'i':
+      - ansible-playbook ~/ansible-deploy/deploy.yml --extra-vars "REPOSITORY_URL=https://github.com/psmb/FestivalDistr DOMAIN=festival.psmb.ru HOST=server.psmb.ru PORT=1127" -i 'i':
           timeout: 1800
