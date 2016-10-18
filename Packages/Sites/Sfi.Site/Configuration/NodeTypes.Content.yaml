@@ -129,6 +129,25 @@
         inspector:
           group: base
           editor: 'TYPO3.Neos/Inspector/Editors/LinkEditor'
+    showDate:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'Показывать дату?'
+        reloadIfChanged: true
+        inspector:
+          group: base
+
+    date:
+      type: DateTime
+      defaultValue: 'now'
+      ui:
+        label: 'Дата'
+        reloadIfChanged: true
+        inspector:
+          group: base
+          editorOptions:
+            format: 'd-m-Y H:i'
     image:
       type: TYPO3\Media\Domain\Model\ImageInterface
       ui:

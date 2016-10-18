@@ -5,7 +5,7 @@ prototype(Psmb.NodeTypes:Text) {
   attributes.class = ${'RteText ' + node.properties.variant}
 }
 prototype(Psmb.NodeTypes:Headline) {
-  attributes.class = 'RteText'
+  attributes.class = 'RteText H2'
 }
 prototype(Psmb.NodeTypes:Image) {
   attributes.class = 'Figure'

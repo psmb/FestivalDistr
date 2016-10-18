@@ -3,6 +3,7 @@ prototype(S:VenuePage) {
 	main = TYPO3.Neos:ContentCollection {
 		nodePath = 'main'
 	}
+	venueArticles = S:VenueArticleLinkList
 	articles = S:ArticleLinkList
 	venuesMenu = S:VenuesMenu
 }

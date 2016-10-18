@@ -1,15 +1,20 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 
 <div class="column ArticleLink marginBottom-double">
-	<a href="{link}" title="{title}">
+	<f:if condition="{node.context.workspace.name} == 'live'">
+		<a href="{link}" title="{title}">
+	</f:if>
 		<div class="backgroundColor-white shadow shadow-hover">
 			<f:if condition="{imageUri}">
-				<img src="{imageUri}" alt={title} />
+				<img src="{imageUri}" alt="{title}" />
 			</f:if>
-			<div class="padding-single">
-				<h3 class="Dog">{neos:contentElement.editable(property: 'title', tag: 'span')}</h3>
-				<div class="Squirrel color-grayLight">{neos:contentElement.editable(property: 'teaser', tag: 'span')}</div>
+			<div class="padding-double">
+				<h3 class="Dog marginBottom-single">{neos:contentElement.editable(property: 'title', tag: 'span')}</h3>
+				<div class="Squirrel">{neos:contentElement.editable(property: 'teaser', tag: 'span')}</div>
+				<div class="Squirrel color-grayLight marginTop-single"><f:format.date forceLocale="{true}" cldrFormat="dd MMMM yyyy">{date}</f:format.date></div>
 			</div>
 		</div>
-	</a>
+	<f:if condition="{node.context.workspace.name} == 'live'">
+		</a>
+	</f:if>
 </div>

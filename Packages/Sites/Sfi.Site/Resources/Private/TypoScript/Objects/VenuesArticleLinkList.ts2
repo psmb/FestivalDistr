@@ -1,0 +1,18 @@
+prototype(S:VenueArticleLinkList) < prototype(T:Collection) {
+	@process.tmpl = ${'<div class="marginHorizontal-single paddingTop-triple">
+		<div class="row small-up-1 medium-up-1 large-up-2 VenueArticleLinkList">' + value + '</div>
+	</div>'}
+	articles = ${q(node).children('venueArticles').children()}
+	collection = ${this.articles.get()}
+	itemRenderer = ContentCase
+	@if.notEmpty = ${documentNode.context.inBackend || this.articles.count() > 0 ? true : false}
+	@cache {
+		mode = 'cached'
+		entryIdentifier {
+			node = ${node}
+		}
+		entryTags {
+			1 = ${'DescendantOf_' + node.identifier}
+		}
+	}
+}

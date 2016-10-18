@@ -4,11 +4,14 @@
 	<div class="fixedWidth">
 		<div class="row">
 			<div class="small-12 large-8 columns">
-				<div style="position: relative; top: -112px" class="backgroundColor-white shadow padding-double">
+				<div style="position: relative; top: -112px;" class="backgroundColor-white shadow padding-double">
 					<!-- TODO: i18n -->
 					<p class="Woody marginBottom-half">Фестивальная площадка <span class="color-primaryAlt">«{title}»</span></p>
 					<h1 class="H1 marginBottom-single">{neos:contentElement.editable(property: 'fullTitle', tag: 'span')}</h1>
-					{main -> f:format.raw()}
+					<div style="overflow: hidden">
+						{main -> f:format.raw()}
+					</div>
+					{venueArticles -> f:format.raw()}
 				</div>
 				{articles -> f:format.raw()}
 			</div>
