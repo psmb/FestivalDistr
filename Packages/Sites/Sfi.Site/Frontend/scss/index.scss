@@ -7,6 +7,7 @@ $global-width: 100% !default;
 @import 'reset';
 @import 'Base/**/*.scss';
 @import 'Modules/**/*.scss';
+@import 'Vendor/**/*.scss';
 @import 'overrideVendor';
 
 @include foundation-flex-grid;

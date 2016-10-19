@@ -1,0 +1,18 @@
+{
+    "description": "Lory slider for Neos CMS",
+    "type": "neos-package",
+    "name": "psmb/slider",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Psmb\\Slider": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Psmb.Slider"
+        }
+    }
+}

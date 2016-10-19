@@ -1,0 +1,56 @@
+.Lory-frame {
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.Lory-slides {
+	display: inline-block;
+}
+
+.Lory-slide {
+	position: relative;
+	display: inline-block;
+}
+
+.Lory-prev,
+.Lory-next {
+	position: absolute;
+	top: 48%;
+	margin-top: -25px;
+	display: block;
+	cursor: pointer;
+}
+
+.Lory-next {
+	right: 0;
+}
+
+.Lory-prev {
+	left: 0;
+}
+
+.Lory-next svg,
+.Lory-prev svg {
+	width: 25px;
+	fill: $gray;
+}
+
+.Lory-dots {
+	margin-top: 8px;
+	text-align: center;
+}
+.Lory-dot {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin: 5px 6px;
+	border-radius: 50%;
+	background-color: $gray-line;
+	cursor: pointer;
+}
+.Lory-dot.active {
+	background-color: $gray-light;
+}

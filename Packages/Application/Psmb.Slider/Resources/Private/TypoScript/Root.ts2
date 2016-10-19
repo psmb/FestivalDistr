@@ -1,0 +1,19 @@
+prototype(Psmb.Slider:Slider) < prototype(TYPO3.TypoScript:Tag) {
+	@process.arrows = ${value + '
+		<span class="js-Lory-prev Lory-prev">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+		</span>
+		<span class="js-Lory-next Lory-next">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+		</span>
+		<ul class="js-Lory-dots Lory-dots"></ul>
+	'}
+	@process.tmpl = ${'<div class="js-Lory Lory">' + value + '</div>'}
+	content = ContentCollectionRenderer {
+		@process.ul = ${'<div class="js-Lory-frame Lory-frame"><ul class="js-Lory-slides Lory-slides">' + value + '</ul></div>'}
+		nodePath = "."
+		prototype(TYPO3.Neos:ContentCase) {
+			@process.li = ${'<li class="js-Lory-slide Lory-slide">' + value + '</li>'}
+		}
+	}
+}

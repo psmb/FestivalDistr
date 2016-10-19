@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "foundation-sites": "^6"
+    "foundation-sites": "^6",
+    "lory.js": "^2.2.1"
   },
   "devDependencies": {
     "browser-sync": "*",

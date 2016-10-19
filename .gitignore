@@ -1,8 +1,13 @@
 /Build/
 /Configuration/
 /Data/
-/Packages/*
-!/Packages/Sites/
+/Packages/Application/*
+!/Packages/Application/Psmb.Slider/
+/Packages/Framework/
+/Packages/Neos/
+/Packages/Plugins/
+/Packages/Libraries/
+/Packages/Inactive/
 /Web/_Resources/
 /Web/index.php
 /Web/.htaccess

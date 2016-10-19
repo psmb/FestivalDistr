@@ -13,6 +13,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var inputAssets = [
 ];
 var inputJs = [
+	'./node_modules/lory.js/dist/lory.min.js',
 	'./vendor_js/**/*.js',
 	'./js/**/*.js'
 ];
