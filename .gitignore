@@ -2,7 +2,7 @@
 /Configuration/
 /Data/
 /Packages/Application/*
-!/Packages/Application/Psmb.Slider/
+!/Packages/Application/Psmb.Carousel/
 /Packages/Framework/
 /Packages/Neos/
 /Packages/Plugins/

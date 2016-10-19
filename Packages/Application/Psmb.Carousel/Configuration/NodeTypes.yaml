@@ -1,6 +1,6 @@
-'Psmb.Slider:Slider':
+'Psmb.Carousel:Carousel':
   superTypes:
     'TYPO3.Neos:Content': true
     'TYPO3.Neos:ContentCollection': true
   ui:
-    label: 'Slider'
+    label: 'Carousel'

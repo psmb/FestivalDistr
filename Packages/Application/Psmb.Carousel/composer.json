@@ -1,18 +1,18 @@
 {
-    "description": "Lory slider for Neos CMS",
+    "description": "Lory carousel for Neos CMS",
     "type": "neos-package",
-    "name": "psmb/slider",
+    "name": "psmb/carousel",
     "require": {
         "typo3/flow": "*"
     },
     "autoload": {
         "psr-0": {
-            "Psmb\\Slider": "Classes/"
+            "Psmb\\Carousel": "Classes/"
         }
     },
     "extra": {
         "neos": {
-            "package-key": "Psmb.Slider"
+            "package-key": "Psmb.Carousel"
         }
     }
 }

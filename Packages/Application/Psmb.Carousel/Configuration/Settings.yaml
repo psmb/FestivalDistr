@@ -2,4 +2,4 @@ TYPO3:
   Neos:
     typoScript:
       autoInclude:
-        Psmb.Slider: TRUE
+        Psmb.Carousel: TRUE
