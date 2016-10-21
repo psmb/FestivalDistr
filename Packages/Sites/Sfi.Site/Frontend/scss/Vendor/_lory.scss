@@ -1,3 +1,7 @@
+.Lory {
+	position: relative;
+}
+
 .Lory-frame {
 	position: relative;
 	font-size: 0;
@@ -17,19 +21,8 @@
 
 .Lory-prev,
 .Lory-next {
-	position: absolute;
-	top: 48%;
-	margin-top: -25px;
-	display: block;
+	display: inline-block;
 	cursor: pointer;
-}
-
-.Lory-next {
-	right: 0;
-}
-
-.Lory-prev {
-	left: 0;
 }
 
 .Lory-next svg,
@@ -38,10 +31,16 @@
 	fill: $gray;
 }
 
-.Lory-dots {
-	margin-top: 8px;
-	text-align: center;
+.Lory-bar {
+	display: flex;
+	justify-content: center;
 }
+
+.Lory-dots {
+	display: inline-block;
+	margin-top: 15px;
+}
+
 .Lory-dot {
 	width: 10px;
 	height: 10px;
@@ -51,6 +50,7 @@
 	background-color: $gray-line;
 	cursor: pointer;
 }
+
 .Lory-dot.active {
-	background-color: $gray-light;
+	background-color: $gray;
 }
