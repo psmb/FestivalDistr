@@ -1,8 +1,8 @@
 namespace: T=Neos.Fusion
 namespace: S=Sfi.Site
-include: Objects/**/*.ts2
-include: NodeTypes/**/*.ts2
-include: Override.ts2
+include: Objects/**/*.fusion
+include: NodeTypes/**/*.fusion
+include: Override.fusion
 
 root.thePage {
 	@position = 'before default'

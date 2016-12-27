@@ -17,12 +17,12 @@
 		"neos/twitter-bootstrap": "@dev",
 		"flowpack/neos-frontendlogin": "@dev",
 
-		"flowpack/listable": "*",
-		"sfi/youtube": "*",
-		"psmb/term": "@dev",
-		"psmb/nodetypes": "@dev",
-		"psmb/createnodebutton": "@dev",
-		"sfi/grid": "@dev"
+		"flowpack/listable": "^2.0",
+		"sfi/youtube": "^2.0",
+		"psmb/term": "^2.0",
+		"psmb/nodetypes": "^2.0",
+		"psmb/createnodebutton": "^2.0",
+		"sfi/grid": "^2.0"
 	},
 	"extra": {
 		"neos": {
