@@ -1,42 +1,40 @@
+
 'Psmb.NodeTypes:Text':
   properties:
     variant:
       type: string
-      defaultValue: 'Paragraph'
+      defaultValue: Paragraph
       ui:
-        label: 'Вариант'
-        reloadIfChanged: TRUE
+        label: Вариант
+        reloadIfChanged: true
         inspector:
-          group: 'base'
+          group: base
           editor: Content/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               Paragraph:
-                label: 'Paragraph'
+                label: Paragraph
               'Squirrel color-grayLight':
                 label: 'Squirrel color-grayLight'
               Epigraph:
-                label: 'Epigraph'
-
-
+                label: Epigraph
 'Sfi.Site:VenuesMenu':
   superTypes:
     - 'TYPO3.Neos:Content'
   ui:
     label: 'Меню площадок'
-
 'Sfi.Site:NavSection':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Content': true
-    'TYPO3.Neos:ContentCollection': true
+    'TYPO3.Neos:Content': '1'
+    'TYPO3.Neos:ContentCollection': '1'
   ui:
-    label: 'Секция'
+    label: Секция
     inspector:
       groups:
         nav:
-          label: 'Секция'
+          label: Секция
   constraints:
     nodeTypes:
       '*': true
@@ -47,9 +45,9 @@
         label: 'Название для навигации (на английском)'
         reloadPageIfChanged: true
         inspector:
-          group: 'nav'
+          group: nav
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        TYPO3.Neos/Validation/StringLengthValidator:
           minimum: 1
           maximum: 255
         regularExpression:
@@ -57,23 +55,20 @@
     title:
       type: string
       ui:
-        label: 'Название'
+        label: Название
         reloadPageIfChanged: true
         inspector:
-          group: 'nav'
-
+          group: nav
 'Sfi.Site:PaperCard':
   superTypes:
     - 'Sfi.Site:NavSection'
   ui:
-    label: 'Секция-листик'
-
+    label: Секция-листик
 'Sfi.Site:Section':
   superTypes:
     - 'Sfi.Site:NavSection'
   ui:
     label: 'Блок с заголовком'
-
 'Sfi.Site:ScheduleRow':
   superTypes:
     - 'TYPO3.Neos:Content'
@@ -94,10 +89,9 @@
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Название'
+          placeholder: Название
           link:
             a: true
-
 'Sfi.Site:ArticleLink':
   superTypes:
     - 'TYPO3.Neos:Content'
@@ -109,13 +103,13 @@
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Заголовок'
+          placeholder: Заголовок
     teaser:
       type: string
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Тизер'
+          placeholder: Тизер
     source:
       type: string
       ui:
@@ -125,10 +119,10 @@
     link:
       type: string
       ui:
-        label: 'Ссылка'
+        label: Ссылка
         inspector:
           group: base
-          editor: 'TYPO3.Neos/Inspector/Editors/LinkEditor'
+          editor: TYPO3.Neos/Inspector/Editors/LinkEditor
     showDate:
       type: boolean
       defaultValue: false
@@ -137,12 +131,11 @@
         reloadIfChanged: true
         inspector:
           group: base
-
     date:
       type: DateTime
-      defaultValue: 'now'
+      defaultValue: now
       ui:
-        label: 'Дата'
+        label: Дата
         reloadIfChanged: true
         inspector:
           group: base
@@ -151,22 +144,20 @@
     image:
       type: TYPO3\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Фотка'
-        reloadIfChanged: TRUE
+        label: Фотка
+        reloadIfChanged: true
         inspector:
           group: base
           editorOptions:
             features:
-              resize: TRUE
+              resize: true
             crop:
               aspectRatio:
-                enableOriginal: FALSE
-                allowCustom: FALSE
+                enableOriginal: false
+                allowCustom: false
                 locked:
                   width: 600
                   height: 400
-
-
 'Sfi.Site:PersonCard':
   superTypes:
     - 'TYPO3.Neos:Content'
@@ -178,27 +169,27 @@
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Имя'
+          placeholder: Имя
     info:
       type: string
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Инфо'
+          placeholder: Инфо
     image:
       type: TYPO3\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Фотка'
-        reloadIfChanged: TRUE
+        label: Фотка
+        reloadIfChanged: true
         inspector:
           group: base
           editorOptions:
             features:
-              resize: TRUE
+              resize: true
             crop:
               aspectRatio:
-                enableOriginal: FALSE
-                allowCustom: FALSE
+                enableOriginal: false
+                allowCustom: false
                 locked:
                   width: 140
                   height: 140
