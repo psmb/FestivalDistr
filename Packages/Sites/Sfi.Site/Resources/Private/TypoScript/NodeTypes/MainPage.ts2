@@ -1,13 +1,13 @@
 prototype(S:MainPage)>
 prototype(S:MainPage) < prototype(T:Array) {
 	gallery = S:Gallery
-	main = TYPO3.Neos:ContentCollection {
+	main = Neos.Neos:ContentCollection {
 		nodePath = 'main'
 	}
 	articles = T:Array {
 		@process.tmpl = ${'<div class="paddingVertical-triple fixedWidth">' + value + '</div>'}
 		title = ${'<h3 class="Lead textAlign-center marginBottom-triple color-gray">' + Translation.translate('articlelink.titleMain', null, [], null, 'Sfi.Site') + '</h3>'}
-		content = TYPO3.Neos:ContentCollection {
+		content = Neos.Neos:ContentCollection {
 			nodePath = 'articles'
 			attributes.class = 'row small-up-1 medium-up-2 large-up-3'
 		}

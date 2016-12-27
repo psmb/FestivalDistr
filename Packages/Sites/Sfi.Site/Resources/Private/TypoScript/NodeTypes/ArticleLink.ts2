@@ -1,6 +1,6 @@
 prototype(S:ArticleLink) {
 	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/ArticleLink.html'
-	@process.convertUris = TYPO3.Neos:ConvertUris
+	@process.convertUris = Neos.Neos:ConvertUris
 	title = ${String.stripTags(node.properties.title)}
 	imageUri = ImageUri {
 		asset = ${q(node).property('image')}
