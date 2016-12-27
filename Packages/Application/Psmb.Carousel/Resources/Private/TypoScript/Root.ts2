@@ -14,7 +14,7 @@ prototype(Psmb.Carousel:Carousel) < prototype(Neos.Fusion:Tag) {
 	content = ContentCollectionRenderer {
 		@process.ul = ${'<div class="js-Lory-frame Lory-frame"><ul class="js-Lory-slides Lory-slides">' + value + '</ul></div>'}
 		nodePath = "."
-		prototype(TYPO3.Neos:ContentCase) {
+		prototype(Neos.Neos:ContentCase) {
 			@process.li = ${'<li class="js-Lory-slide Lory-slide">' + value + '</li>'}
 		}
 	}
