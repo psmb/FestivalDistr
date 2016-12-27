@@ -1,4 +1,4 @@
-TYPO3:
+Neos:
   Flow:
     i18n:
       defaultLocale: 'ru'
@@ -13,7 +13,7 @@ TYPO3:
       navigateComponent:
         nodeTree:
           loadingDepth: 1
-  TYPO3CR:
+  ContentRepository:
     contentDimensions:
       'language':
         default: 'ru'
