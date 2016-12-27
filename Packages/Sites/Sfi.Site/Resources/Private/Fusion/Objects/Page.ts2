@@ -50,7 +50,7 @@ prototype(S:Page) < prototype(Page) {
 			}
 		}
 		javascripts.analytics = T:Template {
-			templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Analytics.html'
+			templatePath = 'resource://Sfi.Site/Private/Fusion/Objects/Analytics.html'
 		}
 
 }

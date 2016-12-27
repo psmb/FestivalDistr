@@ -1,5 +1,5 @@
 prototype(Sfi.Site:ScheduleRow) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/ScheduleRow.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/NodeTypes/ScheduleRow.html'
 	main = ContentCollectionRenderer {
 		@process.contentElementWrapping = ContentElementWrapping
 	}

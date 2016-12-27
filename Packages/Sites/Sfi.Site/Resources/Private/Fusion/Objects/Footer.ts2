@@ -1,5 +1,5 @@
 prototype(S:Footer) < prototype(T:Template) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Footer.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/Objects/Footer.html'
 
 	mainMenu = S:NavSectionMenu
 }

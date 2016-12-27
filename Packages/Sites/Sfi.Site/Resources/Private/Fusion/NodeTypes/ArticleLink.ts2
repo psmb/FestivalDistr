@@ -1,5 +1,5 @@
 prototype(S:ArticleLink) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/ArticleLink.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/NodeTypes/ArticleLink.html'
 	@process.convertUris = Neos.Neos:ConvertUris
 	title = ${String.stripTags(node.properties.title)}
 	imageUri = ImageUri {

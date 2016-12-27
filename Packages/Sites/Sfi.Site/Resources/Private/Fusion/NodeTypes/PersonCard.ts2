@@ -1,5 +1,5 @@
 prototype(S:PersonCard) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/PersonCard.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/NodeTypes/PersonCard.html'
 	imageUri = ImageUri {
 		asset = ${q(node).property('image')}
 		maximumWidth = 140

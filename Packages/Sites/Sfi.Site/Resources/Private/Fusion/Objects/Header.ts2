@@ -1,5 +1,5 @@
 prototype(S:Header) < prototype(T:Template) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Header.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/Objects/Header.html'
 	mainMenu = S:NavSectionMenu
 
 	lang = ${Array.first(node.context.dimensions.language)}

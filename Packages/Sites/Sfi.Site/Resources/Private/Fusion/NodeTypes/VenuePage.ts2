@@ -1,5 +1,5 @@
 prototype(S:VenuePage) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/NodeTypes/VenuePage.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/NodeTypes/VenuePage.html'
 	main = Neos.Neos:ContentCollection {
 		nodePath = 'main'
 	}
