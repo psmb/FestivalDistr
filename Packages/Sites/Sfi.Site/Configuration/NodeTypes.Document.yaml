@@ -124,7 +124,7 @@ blah:
         aloha:
           placeholder: 'Сводка по вестивалю по дням'
     coverImage:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: 'Фото обложки'
         reloadIfChanged: false

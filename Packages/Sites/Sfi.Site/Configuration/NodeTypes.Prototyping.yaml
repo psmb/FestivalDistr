@@ -604,7 +604,7 @@
             assets: false
             placeholder: 'e.g. https://placehold.it/1600x900'
     backgroundImage:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: 'Image from Media library'
         reloadIfChanged: true

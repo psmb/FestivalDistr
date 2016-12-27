@@ -142,7 +142,7 @@
           editorOptions:
             format: 'd-m-Y H:i'
     image:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: Фотка
         reloadIfChanged: true
@@ -177,7 +177,7 @@
         aloha:
           placeholder: Инфо
     image:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: Фотка
         reloadIfChanged: true
