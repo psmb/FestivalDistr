@@ -1,7 +1,7 @@
 
 'Psmb.Carousel:Carousel':
   superTypes:
-    'TYPO3.Neos:Content': '1'
-    'TYPO3.Neos:ContentCollection': '1'
+    'TYPO3.Neos:Content': true
+    'TYPO3.Neos:ContentCollection': true
   ui:
     label: Carousel
