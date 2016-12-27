@@ -235,10 +235,10 @@
           regularExpression: '/^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/'
 'TYPO3.Neos:Content':
   superTypes:
-    'M12.Foundation:AbstractGenericHelpers': '1'
-    'M12.Foundation:AbstractSpacing': '1'
-    'M12.Foundation:AbstractDevBase': '1'
-    'M12.Foundation:AbstractDevCustomLook': '1'
+    'M12.Foundation:AbstractGenericHelpers': true
+    'M12.Foundation:AbstractSpacing': true
+    'M12.Foundation:AbstractDevBase': true
+    'M12.Foundation:AbstractDevCustomLook': true
 'M12.Foundation:AbstractNodeTitle':
   abstract: true
   properties:
@@ -457,7 +457,7 @@
 'M12.Foundation:AbstractSectionIdMagellan':
   abstract: true
   superTypes:
-    'M12.Foundation:AbstractSectionId': '1'
+    'M12.Foundation:AbstractSectionId': true
   ui:
     inspector:
       groups:

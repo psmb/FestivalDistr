@@ -21,14 +21,14 @@
                 label: Epigraph
 'Sfi.Site:VenuesMenu':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Меню площадок'
 'Sfi.Site:NavSection':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Content': '1'
-    'TYPO3.Neos:ContentCollection': '1'
+    'TYPO3.Neos:Content': true
+    'TYPO3.Neos:ContentCollection': true
   ui:
     label: Секция
     inspector:
@@ -61,18 +61,18 @@
           group: nav
 'Sfi.Site:PaperCard':
   superTypes:
-    - 'Sfi.Site:NavSection'
+    'Sfi.Site:NavSection': true
   ui:
     label: Секция-листик
 'Sfi.Site:Section':
   superTypes:
-    - 'Sfi.Site:NavSection'
+    'Sfi.Site:NavSection': true
   ui:
     label: 'Блок с заголовком'
 'Sfi.Site:ScheduleRow':
   superTypes:
-    - 'TYPO3.Neos:Content'
-    - 'TYPO3.Neos:ContentCollection'
+    'TYPO3.Neos:Content': true
+    'TYPO3.Neos:ContentCollection': true
   ui:
     label: 'Строка расписания'
   constraints:
@@ -94,7 +94,7 @@
             a: true
 'Sfi.Site:ArticleLink':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Внешний материал'
   properties:
@@ -160,7 +160,7 @@
                   height: 400
 'Sfi.Site:PersonCard':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Человек с кружочком'
   properties:
