@@ -1,34 +1,37 @@
+
 Neos:
   Flow:
     i18n:
-      defaultLocale: 'ru'
+      defaultLocale: ru
     http:
       baseUri: 'https://festival.psmb.ru/'
   Neos:
-    typoScript:
-      autoInclude:
-        'Sfi.Site': TRUE
     userInterface:
-      defaultLanguage: 'ru'
+      defaultLanguage: ru
       navigateComponent:
         nodeTree:
           loadingDepth: 1
+    fusion:
+      autoInclude:
+        Sfi.Site: true
   ContentRepository:
     contentDimensions:
-      'language':
-        default: 'ru'
-        defaultPreset: 'ru'
-        label: 'Language'
-        icon: 'icon-language'
+      language:
+        default: ru
+        defaultPreset: ru
+        label: Language
+        icon: icon-language
         presets:
-          'ru':
-            label: 'Russian'
-            values: ['ru']
+          ru:
+            label: Russian
+            values:
+              - ru
             uriSegment: ''
-          'en':
-            label: 'English'
-            values: ['en']
-            uriSegment: 'en'
+          en:
+            label: English
+            values:
+              - en
+            uriSegment: en
 Sfi:
   YouTube:
     className: 'YouTube flex-video widescreen'
