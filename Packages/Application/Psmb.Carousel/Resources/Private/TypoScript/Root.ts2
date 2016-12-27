@@ -1,4 +1,4 @@
-prototype(Psmb.Carousel:Carousel) < prototype(TYPO3.TypoScript:Tag) {
+prototype(Psmb.Carousel:Carousel) < prototype(Neos.Fusion:Tag) {
 	@process.arrows = ${value + '
 		<div class="Lory-bar">
 			<span class="js-Lory-prev Lory-prev">
