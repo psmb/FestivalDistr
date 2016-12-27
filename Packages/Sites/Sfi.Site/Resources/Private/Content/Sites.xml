@@ -13,7 +13,7 @@
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
       <canonicalLink __type="string"></canonicalLink>
-      <coverImage __type="object" __identifier="f7162424-7372-4e45-ba88-e1b7aaade8e9" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f7162424-7372-4e45-ba88-e1b7aaade8e9&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0c8ca91f-2629-4443-a79c-e96cce02d588&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_914.jpg&quot;,&quot;hash&quot;:&quot;3eaf5fc04289b6a224c89e43c3c041ae57ca6fd1&quot;,&quot;__identity&quot;:&quot;53315daf-cda0-4c90-8bef-62651d3b881a&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:618,&quot;position&quot;:10,&quot;width&quot;:1500,&quot;x&quot;:0,&quot;y&quot;:225,&quot;__identity&quot;:&quot;d5d92ee4-75a0-43e2-870a-78bb2790b699&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</coverImage>
+      <coverImage __type="object" __identifier="f7162424-7372-4e45-ba88-e1b7aaade8e9" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f7162424-7372-4e45-ba88-e1b7aaade8e9&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0c8ca91f-2629-4443-a79c-e96cce02d588&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_914.jpg&quot;,&quot;hash&quot;:&quot;3eaf5fc04289b6a224c89e43c3c041ae57ca6fd1&quot;,&quot;__identity&quot;:&quot;53315daf-cda0-4c90-8bef-62651d3b881a&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:618,&quot;position&quot;:10,&quot;width&quot;:1500,&quot;x&quot;:0,&quot;y&quot;:225,&quot;__identity&quot;:&quot;d5d92ee4-75a0-43e2-870a-78bb2790b699&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</coverImage>
       <headline __type="string">Имеющие надежду</headline>
       <subHeadline __type="string">Фестиваль «Преображенские встречи»</subHeadline>
       <location __type="string">20–21 августа, Москва</location>
@@ -37,7 +37,7 @@
      </properties>
     </variant>
     <node identifier="88345773-254f-7c1e-6bb5-9ebf125693dc" nodeName="gallery">
-     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="400" workspace="live" nodeType="Neos.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2016-06-24T11:18:46+03:00</creationDateTime>
@@ -52,7 +52,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:28:11+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:28:11+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_2459.jpg&quot;,&quot;hash&quot;:&quot;99bb51da97d8cea1848e620befc2f282b486aca1&quot;,&quot;__identity&quot;:&quot;25f5a32b-91e1-4cf9-946e-4815f14e5fee&quot;}}</image>
+        <image __type="object" __identifier="21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_2459.jpg&quot;,&quot;hash&quot;:&quot;99bb51da97d8cea1848e620befc2f282b486aca1&quot;,&quot;__identity&quot;:&quot;25f5a32b-91e1-4cf9-946e-4815f14e5fee&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -64,7 +64,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="89439f2d-4d32-4601-b130-9a2402eb9272" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;89439f2d-4d32-4601-b130-9a2402eb9272&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_628.jpg&quot;,&quot;hash&quot;:&quot;c5e5f270db46c18bb44b3ea4f25bb88a57dc3467&quot;,&quot;__identity&quot;:&quot;18a67a47-0848-4595-b829-d1cc8a751d9d&quot;}}</image>
+        <image __type="object" __identifier="89439f2d-4d32-4601-b130-9a2402eb9272" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;89439f2d-4d32-4601-b130-9a2402eb9272&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_628.jpg&quot;,&quot;hash&quot;:&quot;c5e5f270db46c18bb44b3ea4f25bb88a57dc3467&quot;,&quot;__identity&quot;:&quot;18a67a47-0848-4595-b829-d1cc8a751d9d&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -76,7 +76,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="1c34b3e8-c674-496a-ad71-133ca3273816" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;1c34b3e8-c674-496a-ad71-133ca3273816&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_558.jpg&quot;,&quot;hash&quot;:&quot;76ccafefe1c7e49ff2b800a97c1741177b123415&quot;,&quot;__identity&quot;:&quot;76b7c89c-23c4-4c9b-bd9f-48439c649885&quot;}}</image>
+        <image __type="object" __identifier="1c34b3e8-c674-496a-ad71-133ca3273816" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;1c34b3e8-c674-496a-ad71-133ca3273816&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_558.jpg&quot;,&quot;hash&quot;:&quot;76ccafefe1c7e49ff2b800a97c1741177b123415&quot;,&quot;__identity&quot;:&quot;76b7c89c-23c4-4c9b-bd9f-48439c649885&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -88,7 +88,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="0e5da9fb-6d41-4a02-aaed-3251505ff1c5" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;0e5da9fb-6d41-4a02-aaed-3251505ff1c5&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_9409.jpg&quot;,&quot;hash&quot;:&quot;b46caa8dab5accc31c0d9ecf3db2e7c03fd80801&quot;,&quot;__identity&quot;:&quot;1b11c989-0c4f-4c79-ae0a-816c512c1859&quot;}}</image>
+        <image __type="object" __identifier="0e5da9fb-6d41-4a02-aaed-3251505ff1c5" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;0e5da9fb-6d41-4a02-aaed-3251505ff1c5&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_9409.jpg&quot;,&quot;hash&quot;:&quot;b46caa8dab5accc31c0d9ecf3db2e7c03fd80801&quot;,&quot;__identity&quot;:&quot;1b11c989-0c4f-4c79-ae0a-816c512c1859&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -100,7 +100,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="7101aeb2-1862-4690-a9c4-815e71c6f090" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7101aeb2-1862-4690-a9c4-815e71c6f090&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_9786.jpg&quot;,&quot;hash&quot;:&quot;5a38100acf40ad5fdacd6a20e0fd4e5b01661897&quot;,&quot;__identity&quot;:&quot;2de17c19-cd13-4a37-9cf7-7a02bc3107c2&quot;}}</image>
+        <image __type="object" __identifier="7101aeb2-1862-4690-a9c4-815e71c6f090" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7101aeb2-1862-4690-a9c4-815e71c6f090&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_9786.jpg&quot;,&quot;hash&quot;:&quot;5a38100acf40ad5fdacd6a20e0fd4e5b01661897&quot;,&quot;__identity&quot;:&quot;2de17c19-cd13-4a37-9cf7-7a02bc3107c2&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -112,7 +112,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:39:49+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="5a69bf6c-25b0-4f85-84d1-127a51481506" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;5a69bf6c-25b0-4f85-84d1-127a51481506&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_634.jpg&quot;,&quot;hash&quot;:&quot;a5d2cd04e7f8acfad566ced6275249d92fe2d179&quot;,&quot;__identity&quot;:&quot;01af99f9-f934-46be-8d09-9d1fec9c4578&quot;}}</image>
+        <image __type="object" __identifier="5a69bf6c-25b0-4f85-84d1-127a51481506" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;5a69bf6c-25b0-4f85-84d1-127a51481506&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_634.jpg&quot;,&quot;hash&quot;:&quot;a5d2cd04e7f8acfad566ced6275249d92fe2d179&quot;,&quot;__identity&quot;:&quot;01af99f9-f934-46be-8d09-9d1fec9c4578&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -124,7 +124,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T16:52:25+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="45cf1c71-d1a2-45d9-aad3-a14b6a541f74" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;45cf1c71-d1a2-45d9-aad3-a14b6a541f74&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;csm_1_53_IMG_2594_773c11411b.jpg&quot;,&quot;hash&quot;:&quot;89544aa62d355309b08449033cd9879b0b4c53b8&quot;,&quot;__identity&quot;:&quot;4f14844f-6051-4c1b-894b-675fdc8ec8e1&quot;}}</image>
+        <image __type="object" __identifier="45cf1c71-d1a2-45d9-aad3-a14b6a541f74" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;45cf1c71-d1a2-45d9-aad3-a14b6a541f74&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;csm_1_53_IMG_2594_773c11411b.jpg&quot;,&quot;hash&quot;:&quot;89544aa62d355309b08449033cd9879b0b4c53b8&quot;,&quot;__identity&quot;:&quot;4f14844f-6051-4c1b-894b-675fdc8ec8e1&quot;}}</image>
        </properties>
       </variant>
      </node>
@@ -136,13 +136,13 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T15:40:58+03:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T15:40:58+03:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="f720ec0f-0dca-4977-9a74-70e6e6b55a6d" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;f720ec0f-0dca-4977-9a74-70e6e6b55a6d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_0324.jpg&quot;,&quot;hash&quot;:&quot;3bfc82cac206fdcff2bfd344c33f11a1bd567630&quot;,&quot;__identity&quot;:&quot;0dce895d-19bb-47b1-8f2a-ef9cc86d4120&quot;}}</image>
+        <image __type="object" __identifier="f720ec0f-0dca-4977-9a74-70e6e6b55a6d" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;f720ec0f-0dca-4977-9a74-70e6e6b55a6d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-08-23_0324.jpg&quot;,&quot;hash&quot;:&quot;3bfc82cac206fdcff2bfd344c33f11a1bd567630&quot;,&quot;__identity&quot;:&quot;0dce895d-19bb-47b1-8f2a-ef9cc86d4120&quot;}}</image>
        </properties>
       </variant>
      </node>
     </node>
     <node identifier="a066467f-cc1f-e186-01e2-8f3bb5aaead3" nodeName="main">
-     <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2016-06-23T15:45:42+03:00</creationDateTime>
@@ -242,7 +242,7 @@
             <lastModificationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:13+03:00</lastModificationDateTime>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-06-24T22:10:12+03:00</lastPublicationDateTime>
             <properties>
-             <image __type="object" __identifier="819eb5f8-2ac1-41c9-ae91-a43961f986b2" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;819eb5f8-2ac1-41c9-ae91-a43961f986b2&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_2459.jpg&quot;,&quot;hash&quot;:&quot;99bb51da97d8cea1848e620befc2f282b486aca1&quot;,&quot;__identity&quot;:&quot;25f5a32b-91e1-4cf9-946e-4815f14e5fee&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1852,&quot;position&quot;:10,&quot;width&quot;:1853,&quot;x&quot;:2020,&quot;y&quot;:158,&quot;__identity&quot;:&quot;d4bb9963-9eca-45b1-a5b6-c90eb26bf4e3&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+             <image __type="object" __identifier="819eb5f8-2ac1-41c9-ae91-a43961f986b2" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;819eb5f8-2ac1-41c9-ae91-a43961f986b2&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;21d3bdfa-68ab-4d8d-80b7-fc7f4ff52026&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;IMG_2459.jpg&quot;,&quot;hash&quot;:&quot;99bb51da97d8cea1848e620befc2f282b486aca1&quot;,&quot;__identity&quot;:&quot;25f5a32b-91e1-4cf9-946e-4815f14e5fee&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1852,&quot;position&quot;:10,&quot;width&quot;:1853,&quot;x&quot;:2020,&quot;y&quot;:158,&quot;__identity&quot;:&quot;d4bb9963-9eca-45b1-a5b6-c90eb26bf4e3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
             </properties>
            </variant>
           </node>
@@ -407,7 +407,7 @@
       </properties>
      </variant>
      <node identifier="07036823-b9fa-03ec-801a-2aa67db14359" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:31+03:00</creationDateTime>
@@ -431,7 +431,7 @@
       </properties>
      </variant>
      <node identifier="d82c10a8-c965-cffd-4cb9-8fa06a8a9a0b" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:44+03:00</creationDateTime>
@@ -455,7 +455,7 @@
       </properties>
      </variant>
      <node identifier="b95fe397-242c-a503-6dfa-1964a0eb028b" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:01:53+03:00</creationDateTime>
@@ -479,7 +479,7 @@
       </properties>
      </variant>
      <node identifier="211cfdc1-62d5-6ae8-ae6e-4817416aafa5" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:06+03:00</creationDateTime>
@@ -503,7 +503,7 @@
       </properties>
      </variant>
      <node identifier="81f48eb4-dbe3-873c-dc62-6dab34aaebca" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:13+03:00</creationDateTime>
@@ -527,7 +527,7 @@
       </properties>
      </variant>
      <node identifier="aeef05c6-4296-f23b-d1ec-a3a23c0db4df" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:19+03:00</creationDateTime>
@@ -551,7 +551,7 @@
       </properties>
      </variant>
      <node identifier="3131c872-aee7-e707-7905-2b3150476d6e" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:26+03:00</creationDateTime>
@@ -575,7 +575,7 @@
       </properties>
      </variant>
      <node identifier="f6316378-ff67-8622-b06e-67425187a548" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:36+03:00</creationDateTime>
@@ -599,7 +599,7 @@
       </properties>
      </variant>
      <node identifier="0ac9ac6b-9cd2-50cd-275a-46320b3f3286" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:02:53+03:00</creationDateTime>
@@ -623,7 +623,7 @@
       </properties>
      </variant>
      <node identifier="8f0905d4-78bb-74ad-cfc6-498575bb26de" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:01+03:00</creationDateTime>
@@ -647,7 +647,7 @@
       </properties>
      </variant>
      <node identifier="64d15ab6-13b0-3e14-9df7-6211fe28748b" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:13+03:00</creationDateTime>
@@ -671,7 +671,7 @@
       </properties>
      </variant>
      <node identifier="266b16f5-d0f5-e751-f04b-22ff08aa86c9" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:24+03:00</creationDateTime>
@@ -695,7 +695,7 @@
       </properties>
      </variant>
      <node identifier="db91313d-25e6-86b9-121c-e11a53b0118c" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-06-24T17:03:33+03:00</creationDateTime>
