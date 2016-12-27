@@ -1,6 +1,6 @@
 # Borrowed from https://raw.githubusercontent.com/million12/M12.Foundation/master/Configuration/NodeTypes.yaml
 
-'TYPO3.Neos:Node':
+'Neos.Neos:Node':
   ui:
     inspector:
       tabs:
@@ -189,7 +189,7 @@
             placeholder: 'e.g. 10px'
             allowEmpty: true
       validation:
-        TYPO3.Neos/Validation/RegularExpressionValidator:
+        Neos.Neos/Validation/RegularExpressionValidator:
           regularExpression: '/^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/'
     marginBottom:
       type: string
@@ -203,7 +203,7 @@
             placeholder: 'e.g. 10px'
             allowEmpty: true
       validation:
-        TYPO3.Neos/Validation/RegularExpressionValidator:
+        Neos.Neos/Validation/RegularExpressionValidator:
           regularExpression: '/^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/'
     marginLeft:
       type: string
@@ -217,7 +217,7 @@
             placeholder: 'e.g. 10px'
             allowEmpty: true
       validation:
-        TYPO3.Neos/Validation/RegularExpressionValidator:
+        Neos.Neos/Validation/RegularExpressionValidator:
           regularExpression: '/^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/'
     marginRight:
       type: string
@@ -231,9 +231,9 @@
             placeholder: 'e.g. 10px'
             allowEmpty: true
       validation:
-        TYPO3.Neos/Validation/RegularExpressionValidator:
+        Neos.Neos/Validation/RegularExpressionValidator:
           regularExpression: '/^-?\.?\d[\d\.]{0,4}([a-z]{2,4})?$/'
-'TYPO3.Neos:Content':
+'Neos.Neos:Content':
   superTypes:
     'M12.Foundation:AbstractGenericHelpers': true
     'M12.Foundation:AbstractSpacing': true
@@ -449,7 +449,7 @@
           editorOptions:
             placeholder: None
       validation:
-        TYPO3.Neos/Validation/StringLengthValidator:
+        Neos.Neos/Validation/StringLengthValidator:
           minimum: 1
           maximum: 64
         regularExpression:
